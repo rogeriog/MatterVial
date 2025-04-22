@@ -1,7 +1,7 @@
 # MatterVial: Materials Feature Extraction via Interpretable Artificial Learning
 
 <div align="center">
-    <img src="img/MATTERVial_logo.jpg" alt="MatterVial-logo"  width=200>
+    <img src="img/MATTERVial_logo.png" alt="MatterVial-logo"  width=200>
     <br>
 
 ## Overview

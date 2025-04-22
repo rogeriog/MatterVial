@@ -1,8 +1,8 @@
 
 
 <div align="center">
-<h1>MatterVial: Materials Feature Extraction via Interpretable Artificial Learning</h1>
 <img src="img/MATTERVial_logo.png" alt="MatterVial-logo" width=200>
+<h1>MatterVial: Materials Feature Extraction via Interpretable Artificial Learning</h1>
 <br>
 </div>
 

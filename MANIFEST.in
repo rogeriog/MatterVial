@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include mattervial/featurizers/custom_models *.h5 *.pkl
+recursive-include mattervial/featurizers/formulas *.json *.txt

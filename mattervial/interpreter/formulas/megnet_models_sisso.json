@@ -1,0 +1,23 @@
+
+{
+  "MEGNet_MatMiner_1": {
+    "formula": "2.5 * mean_MagpieData_Number + 0.8 * mean_MagpieData_AtomicWeight - 1.2 * mean_MagpieData_CovalentRadius",
+    "description": "Example formula combining atomic number, weight and radius features"
+  },
+  "MEGNet_MatMiner_3": {
+    "formula": "0.9 * max_MagpieData_ElectronAffinity + 1.4 * mean_MagpieData_Electronegativity",
+    "description": "Linear combination of electron affinity and electronegativity"
+  },
+  "MEGNet_MatMiner_5": {
+    "formula": "3.1 * mean_MagpieData_MeltingT - 0.5 * mean_MagpieData_AtomicVolume + 1.7 * max_MagpieData_ElectronAffinity",
+    "description": "Complex relationship between melting point, volume and electron affinity"
+  },
+  "MEGNet_MatMiner_7": {
+    "formula": "1.2 * range_MagpieData_Electronegativity + 0.7 * mean_MagpieData_NsValence - 0.4 * mean_MagpieData_NpValence",
+    "description": "Combination of electronegativity range and valence states"
+  },
+  "MEGNet_MatMiner_10": {
+    "formula": "2.0 * mean_MagpieData_AtomicWeight + 1.5 * max_MagpieData_MeltingT - 0.9 * min_MagpieData_CovalentRadius",
+    "description": "Weighted sum of atomic properties and melting point"
+  }
+}

@@ -2,8 +2,7 @@
 
 <div align="center">
 <img src="img/MATTERVial_logo.png" alt="MatterVial-logo" width=200>
-<h1>MatterVial: Materials Feature Extraction via Interpretable Artificial Learning</h1>
-<br>
+<h1 style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Materials Feature Extraction via Interpretable Artificial Learning</h1>
 </div>
 
 ## Overview

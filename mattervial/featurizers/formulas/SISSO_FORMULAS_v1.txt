@@ -1,0 +1,436 @@
+# Combined SISSO Feature Expressions for All Datasets
+# Each section below originates from a different dataset file.
+
+############################
+# Dataset: matbench_dielectric
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: safe_div(df["BondFractions|Cl - Fe bond frac."], df["AGNIFingerPrint|std_dev AGNI eta=1.88e+00"])
+Feature 2: safe_div(df["BondFractions|Cl - Fe bond frac."], df["XRDPowderPattern|xrd_97"])
+Feature 3: df["RadialDistributionFunction|radial distribution function|d_0.70"] + df["ElementProperty|MagpieData minimum Row"]
+Feature 4: safe_div(df["BondFractions|In - S bond frac."], df["OPSiteFingerprint|std_dev bent 150 degrees CN_2"])
+Feature 5: safe_div(df["BondFractions|In - S bond frac."], df["ElementProperty|MagpieData avg_dev GSvolume_pa"])
+Feature 6: safe_div(df["BondFractions|In - S bond frac."], df["VoronoiFingerprint|mean Symmetry_index_3"])
+Feature 7: safe_div(df["BondFractions|In - S bond frac."], df["XRDPowderPattern|xrd_68"])
+Feature 8: safe_div(df["BondFractions|Cu - S bond frac."], df["ElementProperty|MagpieData mean MeltingT"])
+Feature 9: safe_div(df["BondFractions|In - S bond frac."], df["CrystalNNFingerprint|std_dev water-like CN_2"])
+Feature 10: safe_div(df["BondFractions|In - S bond frac."], df["ElementProperty|MagpieData mean MeltingT"])
+Feature 11: safe_div(df["BondFractions|Cl - Fe bond frac."], df["OPSiteFingerprint|std_dev L-shaped CN_2"])
+Feature 12: df["BondFractions|Cl - Fe bond frac."] * df["OPSiteFingerprint|mean q2 CN_12"]
+Feature 13: safe_div(df["BondFractions|Cl - Fe bond frac."], df["OPSiteFingerprint|mean L-shaped CN_2"])
+Feature 14: df["BondFractions|Cl - Fe bond frac."] * df["CrystalNNFingerprint|mean wt CN_3"]
+Feature 15: safe_div(df["BondFractions|Cl - Fe bond frac."], df["CrystalNNFingerprint|mean bent 120 degrees CN_2"])
+Feature 16: safe_div(df["BondFractions|Cl - Fe bond frac."], df["ElementProperty|MagpieData avg_dev SpaceGroupNumber"])
+Feature 17: safe_div(df["BondFractions|Cl - Fe bond frac."], df["XRDPowderPattern|xrd_35"])
+Feature 18: df["BondFractions|Cl - Fe bond frac."] * df["OPSiteFingerprint|mean cuboctahedral CN_12"]
+Feature 19: df["BondFractions|Cl - Fe bond frac."] * df["OPSiteFingerprint|mean q6 CN_12"]
+Feature 20: df["BondFractions|Cl - Fe bond frac."] * df["CrystalNNFingerprint|mean T-shaped CN_3"]
+
+
+############################
+# Dataset: matbench_phonons
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["GaussianSymmFunc|mean G2_4.0"] + df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"]
+Feature 2: df["AGNIFingerPrint|mean AGNI eta=1.88e+00"] + df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"]
+Feature 3: df["GeneralizedRDF|mean Gaussian center=2.0 width=1.0"] + df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"]
+Feature 4: df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData minimum Number"]
+Feature 5: df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData mean Row"]
+Feature 6: df["GaussianSymmFunc|std_dev G2_80.0"] - df["ElementProperty|MagpieData minimum Row"]
+Feature 7: df["AGNIFingerPrint|mean AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData minimum Row"]
+Feature 8: df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData mode Row"]
+Feature 9: df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 10: df["AGNIFingerPrint|std_dev AGNI eta=8.00e-01"] - df["ElementProperty|MagpieData minimum Row"]
+Feature 11: df["ElementProperty|MagpieData maximum NpValence"] + df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 12: df["ElementProperty|MagpieData range NpValence"] + df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 13: df["ElementProperty|MagpieData range GSbandgap"] * df["ElementProperty|MagpieData mean NpValence"]
+Feature 14: df["ValenceOrbital|avg p valence electrons"] * df["ElementProperty|MagpieData maximum GSbandgap"]
+Feature 15: df["IonProperty|max ionic char"] + df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 16: df["ElementProperty|MagpieData maximum GSbandgap"] * df["ElementProperty|MagpieData maximum Electronegativity"]
+Feature 17: df["ElementProperty|MagpieData mean GSbandgap"] * df["ElementProperty|MagpieData range NpValence"]
+Feature 18: df["ElementProperty|MagpieData range Electronegativity"] + df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 19: df["ElementProperty|MagpieData mean GSbandgap"] * df["ElementProperty|MagpieData maximum Electronegativity"]
+Feature 20: df["ElementProperty|MagpieData maximum Electronegativity"] + df["ElementProperty|MagpieData minimum CovalentRadius"]
+
+
+############################
+# Dataset: matbench_perovskites
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["VoronoiFingerprint|mean Voro_dist_minimum"] + df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 2: df["AverageBondLength|mean Average bond length"] + df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 3: abs(df["CrystalNNFingerprint|std_dev wt CN_2"] - df["ElectronegativityDiff|minimum EN difference"])
+Feature 4: df["GaussianSymmFunc|std_dev G2_4.0"] + df["ElementFraction|N"]
+Feature 5: abs(df["CrystalNNFingerprint|std_dev wt CN_2"] - df["ElementProperty|MagpieData minimum NValence"])
+Feature 6: df["CrystalNNFingerprint|mean wt CN_2"] + df["ElectronegativityDiff|range EN difference"]
+Feature 7: df["CrystalNNFingerprint|std_dev wt CN_2"] + df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 8: df["CrystalNNFingerprint|std_dev wt CN_2"] + df["ElectronegativityDiff|std_dev EN difference"]
+Feature 9: df["VoronoiFingerprint|mean Voro_dist_minimum"] + df["ElementFraction|N"]
+Feature 10: df["CrystalNNFingerprint|std_dev wt CN_2"] + df["ElectronegativityDiff|range EN difference"]
+Feature 11: df["ValenceOrbital|avg d valence electrons"] + df["ElementProperty|MagpieData avg_dev NUnfilled"]
+Feature 12: df["ElementProperty|MagpieData mean NdUnfilled"] - df["ElementProperty|MagpieData avg_dev NpValence"]
+Feature 13: df["ValenceOrbital|avg d valence electrons"] + df["ElementProperty|MagpieData avg_dev NdUnfilled"]
+Feature 14: df["ElectronegativityDiff|mean EN difference"] - df["ElementFraction|N"]
+Feature 15: df["ElementProperty|MagpieData mean NUnfilled"] + df["ElementProperty|MagpieData mean Row"]
+Feature 16: df["ElementProperty|MagpieData mean SpaceGroupNumber"] - df["ElementProperty|MagpieData maximum NUnfilled"]
+Feature 17: df["ElectronegativityDiff|maximum EN difference"] - df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 18: df["ElectronegativityDiff|mean EN difference"] - df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 19: df["ElectronegativityDiff|mean EN difference"] + df["ElementProperty|MagpieData mean NpValence"]
+Feature 20: df["ValenceOrbital|avg d valence electrons"] + df["ElementProperty|MagpieData maximum NUnfilled"]
+
+
+############################
+# Dataset: matbench_expt_is_metal
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["ElementProperty|MagpieData avg_dev NsValence"] * df["ElementProperty|MagpieData maximum MendeleevNumber"]
+Feature 2: df["ElementProperty|MagpieData mode MeltingT"] * df["ElementProperty|MagpieData mean AtomicWeight"]
+Feature 3: df["ValenceOrbital|avg p valence electrons"] * df["ElementProperty|MagpieData mode NValence"]
+Feature 4: df["ElementProperty|MagpieData mode NValence"] * df["ElementProperty|MagpieData mean NpValence"]
+Feature 5: df["ElementProperty|MagpieData mode MeltingT"] * df["ElementProperty|MagpieData mean Number"]
+Feature 6: df["ElementProperty|MagpieData mode MeltingT"] + df["ElementProperty|MagpieData mean AtomicWeight"]
+Feature 7: df["ElementProperty|MagpieData mode MeltingT"] * df["ElementProperty|MagpieData mode Number"]
+Feature 8: df["ValenceOrbital|avg p valence electrons"] + df["AtomicPackingEfficiency|dist from 5 clusters |APE| < 0.010"]
+Feature 9: df["ElementProperty|MagpieData mode NValence"] * df["ElementProperty|MagpieData maximum MendeleevNumber"]
+Feature 10: df["ElementProperty|MagpieData mode MeltingT"] * df["ElementProperty|MagpieData mode AtomicWeight"]
+Feature 11: df["IonProperty|max ionic char"] + df["ElementFraction|Cu"]
+Feature 12: df["IonProperty|avg ionic char"] + df["ElementFraction|Cu"]
+Feature 13: df["TMetalFraction|transition metal fraction"] + df["IonProperty|avg ionic char"]
+Feature 14: df["IonProperty|max ionic char"] + df["ElementFraction|Si"]
+Feature 15: df["TMetalFraction|transition metal fraction"] + df["IonProperty|max ionic char"]
+Feature 16: df["IonProperty|avg ionic char"] + df["ElementFraction|Si"]
+Feature 17: df["IonProperty|max ionic char"] - df["ElementProperty|MagpieData mode NsValence"]
+Feature 18: df["IonProperty|max ionic char"] + df["ElementProperty|MagpieData mode NsUnfilled"]
+Feature 19: df["IonProperty|avg ionic char"] - df["ElementProperty|MagpieData mode NsValence"]
+Feature 20: df["IonProperty|avg ionic char"] + df["ElementProperty|MagpieData mode NsUnfilled"]
+
+
+############################
+# Dataset: matbench_steels
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: safe_div(df["ElementFraction|Ti"], df["ElementProperty|MagpieData avg_dev NdUnfilled"])
+Feature 2: safe_div(df["ElementFraction|Ti"], df["Stoichiometry|2-norm"])
+Feature 3: safe_div(df["ElementFraction|Ti"], df["Stoichiometry|3-norm"])
+Feature 4: safe_div(df["ElementFraction|Ti"], df["Stoichiometry|10-norm"])
+Feature 5: safe_div(df["ElementFraction|Ti"], df["Stoichiometry|7-norm"])
+Feature 6: safe_div(df["ElementFraction|Ti"], df["Stoichiometry|5-norm"])
+Feature 7: df["ElementFraction|Ti"] + df["ElementFraction|C"]
+Feature 8: abs(df["ElementFraction|Ti"] - df["ElementFraction|C"])
+Feature 9: df["ElementProperty|MagpieData range GSmagmom"]
+Feature 10: safe_div(1.0 , df["ElementProperty|MagpieData range GSmagmom"])
+Feature 11: abs(df["Miedema|Miedema_deltaH_amor"] - df["ElementProperty|MagpieData maximum MeltingT"])
+Feature 12: abs(df["Miedema|Miedema_deltaH_amor"] - df["ElementProperty|MagpieData mean NdUnfilled"])
+Feature 13: abs(df["Miedema|Miedema_deltaH_inter"] - df["ElementProperty|MagpieData avg_dev Electronegativity"])
+Feature 14: abs(df["TMetalFraction|transition metal fraction"] - df["Miedema|Miedema_deltaH_amor"])
+Feature 15: abs(df["Miedema|Miedema_deltaH_inter"] - df["ElementProperty|MagpieData avg_dev GSvolume_pa"])
+Feature 16: abs(df["ValenceOrbital|frac p valence electrons"] - df["Miedema|Miedema_deltaH_inter"])
+Feature 17: abs(df["Miedema|Miedema_deltaH_inter"] - df["ElementProperty|MagpieData avg_dev MendeleevNumber"])
+Feature 18: abs(df["Miedema|Miedema_deltaH_inter"] - df["ElementProperty|MagpieData maximum MendeleevNumber"])
+Feature 19: abs(df["Stoichiometry|0-norm"] - df["Miedema|Miedema_deltaH_amor"])
+Feature 20: abs(df["Miedema|Miedema_deltaH_inter"] - df["ElementProperty|MagpieData maximum NpValence"])
+
+
+############################
+# Dataset: matbench_jdft2d
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: safe_div(df["BondFractions|O - Si bond frac."], df["VoronoiFingerprint|std_dev Voro_vol_sum"])
+Feature 2: safe_div(df["BondFractions|O - Si bond frac."], df["CrystalNNFingerprint|std_dev pentagonal planar CN_5"])
+Feature 3: safe_div(df["BondFractions|O - Si bond frac."], df["CrystalNNFingerprint|std_dev trigonal planar CN_3"])
+Feature 4: safe_div(df["BondFractions|O - Si bond frac."], df["VoronoiFingerprint|std_dev Voro_vol_mean"])
+Feature 5: df["OPSiteFingerprint|mean q2 CN_12"]**3
+Feature 6: abs(df["OPSiteFingerprint|mean q2 CN_12"] - df["ElementProperty|MagpieData mean MendeleevNumber"])
+Feature 7: df["OPSiteFingerprint|mean q2 CN_12"]**2
+Feature 8: df["Miedema|Miedema_deltaH_amor"] * df["ElementProperty|MagpieData mean NdUnfilled"]
+Feature 9: df["OPSiteFingerprint|mean q2 CN_12"] * df["ElementProperty|MagpieData mode Electronegativity"]
+Feature 10: df["Miedema|Miedema_deltaH_inter"] * df["ElementProperty|MagpieData mean NdUnfilled"]
+Feature 11: safe_div(df["BondFractions|O - Si bond frac."], df["VoronoiFingerprint|std_dev Voro_dist_std_dev"])
+Feature 12: safe_div(df["BondFractions|O - Si bond frac."], df["VoronoiFingerprint|std_dev Voro_dist_maximum"])
+Feature 13: df["BondFractions|O - Si bond frac."] * df["CoulombMatrix|coulomb matrix eig 15"]
+Feature 14: safe_div(df["BondFractions|O - Si bond frac."], df["CrystalNNFingerprint|std_dev bent 120 degrees CN_2"])
+Feature 15: df["VoronoiFingerprint|mean Symmetry_index_4"] * df["BondFractions|O - Si bond frac."]
+Feature 16: df["AGNIFingerPrint|std_dev AGNI dir=x eta=1.88e+00"] * df["BondFractions|O - Si bond frac."]
+Feature 17: safe_div(df["BondFractions|O - Si bond frac."], df["VoronoiFingerprint|std_dev Voro_area_maximum"])
+Feature 18: safe_div(df["ElementFraction|Mg"], df["GeneralizedRDF|std_dev Gaussian center=9.0 width=1.0"])
+Feature 19: safe_div(df["ElementFraction|Mg"], df["GaussianSymmFunc|mean G2_4.0"])
+Feature 20: safe_div(df["CrystalNNFingerprint|mean linear CN_2"], df["Stoichiometry|2-norm"])
+
+
+############################
+# Dataset: matbench_log_gvrh
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["GeneralizedRDF|mean Gaussian center=3.0 width=1.0"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 2: df["AGNIFingerPrint|std_dev AGNI dir=y eta=1.88e+00"] + df["DensityFeatures|vpa"]
+Feature 3: df["GeneralizedRDF|mean Gaussian center=2.0 width=1.0"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 4: df["AGNIFingerPrint|std_dev AGNI dir=x eta=2.89e+00"] + df["DensityFeatures|vpa"]
+Feature 5: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["DensityFeatures|vpa"]
+Feature 6: df["BondOrientationParameter|mean BOOP Q l=1"] + df["DensityFeatures|vpa"]
+Feature 7: df["DensityFeatures|vpa"] - df["ElementProperty|MagpieData mean CovalentRadius"]
+Feature 8: df["AGNIFingerPrint|std_dev AGNI dir=x eta=1.88e+00"] + df["DensityFeatures|vpa"]
+Feature 9: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["DensityFeatures|vpa"]
+Feature 10: df["DensityFeatures|vpa"] - df["ElementProperty|MagpieData mean MeltingT"]
+Feature 11: abs(df["ElementProperty|MagpieData range NsValence"] - df["ElementProperty|MagpieData mean MeltingT"])
+Feature 12: df["ElementProperty|MagpieData range NsValence"] - df["ElementProperty|MagpieData mean MeltingT"]
+Feature 13: df["ElementProperty|MagpieData avg_dev NsValence"] - df["ElementProperty|MagpieData mean MeltingT"]
+Feature 14: df["AGNIFingerPrint|std_dev AGNI dir=x eta=1.88e+00"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 15: df["ElementProperty|MagpieData minimum NsValence"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 16: df["ElementProperty|MagpieData mean NpUnfilled"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 17: df["YangSolidSolution|Yang delta"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 18: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 19: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 20: df["ElementProperty|MagpieData mean NsValence"] + df["ElementProperty|MagpieData mean MeltingT"]
+
+
+############################
+# Dataset: matbench_mp_e_form
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["ElementProperty|MagpieData avg_dev Electronegativity"] + df["ElementProperty|MagpieData mean Electronegativity"]
+Feature 2: df["ElementProperty|MagpieData maximum Electronegativity"] + df["ElementFraction|O"]
+Feature 3: df["MaximumPackingEfficiency|max packing efficiency"] - df["IonProperty|avg ionic char"]
+Feature 4: df["MaximumPackingEfficiency|max packing efficiency"] - df["ElementProperty|MagpieData avg_dev Electronegativity"]
+Feature 5: df["ValenceOrbital|frac p valence electrons"] + df["ElementProperty|MagpieData maximum Electronegativity"]
+Feature 6: df["ValenceOrbital|frac p valence electrons"] + df["ElementProperty|MagpieData range Electronegativity"]
+Feature 7: df["IonProperty|avg ionic char"] + df["ElementProperty|MagpieData mean Electronegativity"]
+Feature 8: df["ValenceOrbital|frac p valence electrons"] + df["ElementProperty|MagpieData avg_dev Electronegativity"]
+Feature 9: df["ValenceOrbital|frac p valence electrons"] + df["IonProperty|max ionic char"]
+Feature 10: df["ValenceOrbital|frac p valence electrons"] + df["IonProperty|avg ionic char"]
+Feature 11: df["RadialDistributionFunction|radial distribution function|d_4.70"] - df["ElementProperty|MagpieData maximum GSvolume_pa"]
+Feature 12: abs(df["ChemEnvSiteFingerprint|mean C:8"] - df["ElementProperty|MagpieData range CovalentRadius"])
+Feature 13: df["RadialDistributionFunction|radial distribution function|d_4.70"] - df["ElementProperty|MagpieData avg_dev GSvolume_pa"]
+Feature 14: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData range GSbandgap"]
+Feature 15: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData maximum GSbandgap"]
+Feature 16: df["ElementProperty|MagpieData mean GSbandgap"] + df["ElementProperty|MagpieData maximum GSvolume_pa"]
+Feature 17: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData mean GSbandgap"]
+Feature 18: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData range GSvolume_pa"]
+Feature 19: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData avg_dev GSvolume_pa"]
+Feature 20: df["RadialDistributionFunction|radial distribution function|d_4.80"] - df["ElementProperty|MagpieData maximum GSvolume_pa"]
+
+
+############################
+# Dataset: noemd_hse_pbe_diff
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["GaussianSymmFunc|mean G2_4.0"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 2: df["AGNIFingerPrint|mean AGNI eta=2.89e+00"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 3: df["AGNIFingerPrint|mean AGNI eta=4.43e+00"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 4: df["GeneralizedRDF|mean Gaussian center=7.0 width=1.0"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 5: df["AGNIFingerPrint|mean AGNI eta=1.60e+01"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 6: df["AGNIFingerPrint|mean AGNI eta=6.80e+00"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 7: df["AGNIFingerPrint|mean AGNI eta=1.04e+01"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 8: df["GaussianSymmFunc|mean G2_0.05"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 9: df["GeneralizedRDF|mean Gaussian center=5.0 width=1.0"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 10: df["GeneralizedRDF|mean Gaussian center=4.0 width=1.0"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 11: df["BondFractions|Ga - Se bond frac."] - df["OxidationStates|minimum oxidation state"]
+Feature 12: df["OxidationStates|minimum oxidation state"] + df["ElementFraction|Cu"]
+Feature 13: df["ElementProperty|MagpieData mean NpUnfilled"] - df["ElementProperty|MagpieData mean MendeleevNumber"]
+Feature 14: df["OxidationStates|minimum oxidation state"] - df["ElementFraction|B"]
+Feature 15: df["BondFractions|F - Li bond frac."] - df["OxidationStates|minimum oxidation state"]
+Feature 16: df["ElementProperty|MagpieData mean NpUnfilled"] - df["ElementProperty|MagpieData mean Electronegativity"]
+Feature 17: df["OxidationStates|minimum oxidation state"] - df["ElementProperty|MagpieData maximum NpUnfilled"]
+Feature 18: df["ElementProperty|MagpieData mean NpUnfilled"] + df["BandCenter|band center"]
+Feature 19: df["ElementProperty|MagpieData mean NpUnfilled"] - df["ElementProperty|MagpieData mean Column"]
+Feature 20: df["OxidationStates|minimum oxidation state"] - df["ElementFraction|Li"]
+
+
+############################
+# Dataset: noemd_shg
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["ElementProperty|MagpieData range Electronegativity"] * df["ElementProperty|MagpieData minimum Row"]
+Feature 2: df["ElectronegativityDiff|maximum EN difference"] * df["ElementProperty|MagpieData minimum Row"]
+Feature 3: df["ElementProperty|MagpieData avg_dev Electronegativity"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 4: df["ElectronegativityDiff|mean EN difference"] * df["ElementProperty|MagpieData minimum Row"]
+Feature 5: df["ElectronegativityDiff|mean EN difference"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 6: abs(df["BondFractions|Ge - Te bond frac."] - df["BondFractions|Te - Te bond frac."])
+Feature 7: df["ElementProperty|MagpieData avg_dev Electronegativity"] * df["ElementProperty|MagpieData minimum Row"]
+Feature 8: df["BondFractions|As - Se bond frac."] + df["BondFractions|Ge - Te bond frac."]
+Feature 9: df["ElectronegativityDiff|minimum EN difference"] * df["ElementProperty|MagpieData minimum NdValence"]
+Feature 10: df["BondFractions|Te - Tl bond frac."] + df["BondFractions|Ge - Te bond frac."]
+Feature 11: df["ElectronegativityDiff|maximum EN difference"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 12: df["ElementProperty|MagpieData avg_dev Electronegativity"] * df["ElementProperty|MagpieData mode Row"]
+Feature 13: df["IonProperty|avg ionic char"] * df["ElementProperty|MagpieData minimum Row"]
+Feature 14: df["IonProperty|max ionic char"] * df["ElementProperty|MagpieData mode Row"]
+Feature 15: df["ElementProperty|MagpieData maximum Electronegativity"]**3
+Feature 16: df["IonProperty|avg ionic char"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 17: df["IonProperty|max ionic char"]**3
+Feature 18: df["ElementProperty|MagpieData range Electronegativity"] * df["ElementProperty|MagpieData mode Row"]
+Feature 19: df["ElementProperty|MagpieData range Electronegativity"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+Feature 20: df["IonProperty|max ionic char"] * df["ElementProperty|MagpieData minimum CovalentRadius"]
+
+
+############################
+# Dataset: matbench_log_kvrh
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["AGNIFingerPrint|std_dev AGNI dir=y eta=1.88e+00"] + df["DensityFeatures|vpa"]
+Feature 2: df["GeneralizedRDF|mean Gaussian center=2.0 width=1.0"] + df["DensityFeatures|density"]
+Feature 3: df["AverageBondLength|mean Average bond length"] - df["MaximumPackingEfficiency|max packing efficiency"]
+Feature 4: df["GeneralizedRDF|mean Gaussian center=3.0 width=1.0"] + df["DensityFeatures|density"]
+Feature 5: df["AGNIFingerPrint|std_dev AGNI dir=x eta=1.88e+00"] + df["DensityFeatures|vpa"]
+Feature 6: df["DensityFeatures|vpa"] - df["DensityFeatures|density"]
+Feature 7: df["DensityFeatures|vpa"] - df["ElementProperty|MagpieData mean MeltingT"]
+Feature 8: df["BondOrientationParameter|mean BOOP Q l=1"] + df["DensityFeatures|vpa"]
+Feature 9: df["DensityFeatures|vpa"] - df["ElementProperty|MagpieData mean CovalentRadius"]
+Feature 10: df["DensityFeatures|vpa"] - df["ElementProperty|MagpieData mean Row"]
+Feature 11: df["StructuralHeterogeneity|range neighbor distance variation"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 12: df["CrystalNNFingerprint|std_dev wt CN_6"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 13: df["ElementProperty|MagpieData mode SpaceGroupNumber"] - df["ElementProperty|MagpieData mean MeltingT"]
+Feature 14: df["StructuralHeterogeneity|avg_dev neighbor distance variation"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 15: df["OPSiteFingerprint|std_dev trigonal pyramidal CN_4"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 16: df["BondOrientationParameter|mean BOOP Q l=9"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 17: df["BondOrientationParameter|std_dev BOOP Q l=1"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 18: df["ElementProperty|MagpieData mean MeltingT"] + df["ElementFraction|O"]
+Feature 19: df["BondOrientationParameter|mean BOOP Q l=1"] + df["ElementProperty|MagpieData mean MeltingT"]
+Feature 20: df["YangSolidSolution|Yang delta"] + df["ElementProperty|MagpieData mean MeltingT"]
+
+
+############################
+# Dataset: matbench_glass
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: abs(df["ElementProperty|MagpieData mode NfValence"] - df["ElementProperty|MagpieData range MeltingT"])
+Feature 2: df["ElementProperty|MagpieData mean NUnfilled"] * df["ElementFraction|Co"]
+Feature 3: abs(df["ElementProperty|MagpieData avg_dev NfValence"] - df["ElementProperty|MagpieData range MeltingT"])
+Feature 4: abs(df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|HOMO_element"])
+Feature 5: df["ElementProperty|MagpieData maximum GSvolume_pa"] + df["ElementProperty|MagpieData minimum Electronegativity"]
+Feature 6: df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|HOMO_element"]
+Feature 7: abs(df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|LUMO_element"])
+Feature 8: df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|LUMO_element"]
+Feature 9: df["ElementProperty|MagpieData minimum Electronegativity"] - df["ElementFraction|Co"]
+Feature 10: df["ElementProperty|MagpieData avg_dev GSmagmom"] * df["ElementFraction|Zr"]
+Feature 11: df["ValenceOrbital|frac d valence electrons"] - df["ElementProperty|MagpieData avg_dev NfValence"]
+Feature 12: df["ElementProperty|MagpieData range GSvolume_pa"] * df["ElementProperty|MagpieData mode AtomicWeight"]
+Feature 13: df["ElementProperty|MagpieData mean NdUnfilled"] * df["ElementProperty|MagpieData avg_dev AtomicWeight"]
+Feature 14: df["ElementProperty|MagpieData mean NUnfilled"] * df["ElementProperty|MagpieData mode AtomicWeight"]
+Feature 15: safe_div(df["ElementProperty|MagpieData avg_dev AtomicWeight"], df["ElementProperty|MagpieData range MeltingT"])
+Feature 16: df["ValenceOrbital|frac s valence electrons"] + df["ElementProperty|MagpieData mode NfValence"]
+Feature 17: df["ElementProperty|MagpieData avg_dev NfValence"] + df["ElementProperty|MagpieData avg_dev CovalentRadius"]
+Feature 18: abs(df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|HOMO_element"])
+Feature 19: df["Miedema|Miedema_deltaH_ss_min"] - df["AtomicOrbitals|HOMO_element"]
+Feature 20: df["ElementProperty|MagpieData avg_dev GSmagmom"] * df["ElementFraction|Zr"]
+
+
+############################
+# Dataset: matbench_mp_is_metal
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 37"]
+Feature 2: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["CoulombMatrix|coulomb matrix eig 41"]
+Feature 3: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 40"]
+Feature 4: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 39"]
+Feature 5: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["CoulombMatrix|coulomb matrix eig 42"]
+Feature 6: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["CoulombMatrix|coulomb matrix eig 43"]
+Feature 7: df["StructuralHeterogeneity|range neighbor distance variation"] - df["DensityFeatures|density"]
+Feature 8: df["XRDPowderPattern|xrd_94"] * df["ElementProperty|MagpieData minimum MeltingT"]
+Feature 9: df["VoronoiFingerprint|mean Symmetry_index_6"] * df["ElementProperty|MagpieData mode MeltingT"]
+Feature 10: df["VoronoiFingerprint|mean Voro_index_6"] * df["ElementProperty|MagpieData mode MeltingT"]
+Feature 11: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 35"]
+Feature 12: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 75"]
+Feature 13: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["CoulombMatrix|coulomb matrix eig 79"]
+Feature 14: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 44"]
+Feature 15: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 74"]
+Feature 16: df["AGNIFingerPrint|std_dev AGNI dir=y eta=1.88e+00"] * df["AtomicOrbitals|gap_AO"]
+Feature 17: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 41"]
+Feature 18: df["OPSiteFingerprint|mean cuboctahedral CN_12"] - df["SineCoulombMatrix|sine coulomb matrix eig 30"]
+Feature 19: df["RadialDistributionFunction|radial distribution function|d_0.90"] - df["ElementProperty|MagpieData mean GSmagmom"]
+Feature 20: df["StructuralHeterogeneity|range neighbor distance variation"] - df["ElementProperty|MagpieData mean NUnfilled"]
+
+
+############################
+# Dataset: matbench_mp_gap
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["AGNIFingerPrint|std_dev AGNI eta=1.23e+00"] + df["ElectronegativityDiff|minimum EN difference"]
+Feature 2: df["AGNIFingerPrint|std_dev AGNI eta=1.23e+00"] + df["ElectronegativityDiff|mean EN difference"]
+Feature 3: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 4: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["ElectronegativityDiff|maximum EN difference"]
+Feature 5: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["ElectronegativityDiff|maximum EN difference"]
+Feature 6: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["ValenceOrbital|frac p valence electrons"]
+Feature 7: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["ElectronegativityDiff|mean EN difference"]
+Feature 8: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["ElectronegativityDiff|mean EN difference"]
+Feature 9: df["OPSiteFingerprint|std_dev sgl_bd CN_1"] + df["ElectronegativityDiff|minimum EN difference"]
+Feature 10: df["OPSiteFingerprint|mean sgl_bd CN_1"] + df["ElectronegativityDiff|minimum EN difference"]
+Feature 11: abs(df["BondFractions|O - Si bond frac."] - df["AtomicOrbitals|gap_AO"])
+Feature 12: df["BondFractions|O - Si bond frac."] + df["AtomicOrbitals|gap_AO"]
+Feature 13: abs(df["BondFractions|Al - O bond frac."] - df["ElementProperty|MagpieData range NdValence"])
+Feature 14: cos(df["ElementProperty|MagpieData range NdValence"])
+Feature 15: df["ElementProperty|MagpieData range NdValence"]**2
+Feature 16: df["ElementProperty|MagpieData range NdValence"]**6
+Feature 17: df["TMetalFraction|transition metal fraction"] * df["ElementFraction|O"]
+Feature 18: abs(df["BondFractions|O - Si bond frac."] - df["ElementProperty|MagpieData range NdValence"])
+Feature 19: df["ElementProperty|MagpieData maximum NdValence"]**6
+Feature 20: abs(df["BondFractions|Cu - O bond frac."] - df["ElementProperty|MagpieData range NdValence"])
+
+
+############################
+# Dataset: matbench_expt_gap
+############################
+
+# Translated Feature Expressions
+# Format: Feature_ID: Python Expression
+#--------------------------------------------------
+Feature 1: df["TMetalFraction|transition metal fraction"] + df["AtomicOrbitals|HOMO_energy"]
+Feature 2: df["ElementProperty|MagpieData mean MeltingT"] + df["AtomicOrbitals|HOMO_energy"]
+Feature 3: df["ElementProperty|MagpieData mode SpaceGroupNumber"] + df["AtomicOrbitals|HOMO_energy"]
+Feature 4: df["ValenceOrbital|frac p valence electrons"] - df["ElementProperty|MagpieData mean SpaceGroupNumber"]
+Feature 5: df["ValenceOrbital|frac p valence electrons"] + df["ValenceOrbital|avg p valence electrons"]
+Feature 6: df["ElementProperty|MagpieData maximum NpValence"] - df["AtomicOrbitals|HOMO_energy"]
+Feature 7: df["ValenceOrbital|avg p valence electrons"] - df["AtomicOrbitals|HOMO_element"]
+Feature 8: df["ElementProperty|MagpieData mean SpaceGroupNumber"] + df["AtomicOrbitals|HOMO_energy"]
+Feature 9: df["ValenceOrbital|frac p valence electrons"] - df["AtomicOrbitals|HOMO_energy"]
+Feature 10: df["ValenceOrbital|avg p valence electrons"] - df["AtomicOrbitals|HOMO_energy"]
+Feature 11: df["ElementProperty|MagpieData avg_dev NdUnfilled"] - df["AtomicOrbitals|LUMO_energy"]
+Feature 12: df["ElementProperty|MagpieData maximum NdUnfilled"] + df["AtomicOrbitals|HOMO_element"]
+Feature 13: df["AtomicOrbitals|gap_AO"]**3
+Feature 14: cos(df["AtomicOrbitals|gap_AO"])
+Feature 15: df["AtomicOrbitals|gap_AO"]**2
+Feature 16: df["AtomicPackingEfficiency|dist from 1 clusters |APE| < 0.010"] * df["AtomicOrbitals|gap_AO"]
+Feature 17: df["IonProperty|avg ionic char"] * df["AtomicOrbitals|gap_AO"]
+Feature 18: df["AtomicPackingEfficiency|dist from 3 clusters |APE| < 0.010"] * df["AtomicOrbitals|gap_AO"]
+Feature 19: df["AtomicPackingEfficiency|dist from 5 clusters |APE| < 0.010"] * df["AtomicOrbitals|gap_AO"]
+Feature 20: df["ElementProperty|MagpieData avg_dev Electronegativity"] * df["AtomicOrbitals|gap_AO"]

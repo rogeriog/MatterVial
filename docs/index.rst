@@ -1,7 +1,7 @@
 MatterVial Documentation
 ========================
 
-.. image:: ../img/MATTERVial_logo.png
+.. image:: ../img/MATTERVial_logo_small.png
    :width: 200px
    :align: center
    :alt: MatterVial Logo

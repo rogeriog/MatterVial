@@ -16,11 +16,13 @@ Main interpreter class providing:
 - **Visualization**: Display SVG plots for feature decomposition
 
 ### `decoder.py`
-Encoding/decoding utilities for latent space features:
+Encoding/decoding utilities for latent space features with automatic file management:
 - **encode_ofm()**: Encode OFM features to latent space (ℓ-OFM)
 - **decode_ofm()**: Decode latent features back to OFM space
-- **encode_mm()**: Encode MatMiner features to latent space (ℓ-MM)  
+- **encode_mm()**: Encode MatMiner features to latent space (ℓ-MM)
 - **decode_mm()**: Decode latent features back to MatMiner space
+- **Automatic downloads**: Decoder files (~50MB compressed) are automatically downloaded from Figshare when first needed
+- **Cache management**: Local caching with utilities to check status and clear cache
 
 ### `feature_decomposition.py`
 Advanced feature analysis tools:
@@ -37,8 +39,13 @@ interpreter/
 ├── data/                    # SHAP analysis results and metrics
 ├── formulas/               # Standard feature formulas (JSON)
 ├── shap_values/           # SHAP importance values by feature type
-├── shap_plots/            # SVG visualizations
-└── decoders/              # Autoencoder models for encoding/decoding
+├── shap_plots/            # SVG visualizations (auto-downloaded from Figshare)
+└── decoders/              # Autoencoder models (auto-downloaded from Figshare)
+    ├── MM__AutoEncoder.h5          # MatMiner autoencoder (130MB)
+    ├── OFM__AutoEncoder.h5         # OFM autoencoder (62MB)
+    ├── MM_scaler_autoencoder.pkl   # MatMiner scaler
+    ├── OFM_scaler_autoencoder.pkl  # OFM scaler
+    └── *_encoded_columns.txt       # Feature column names
 ```
 
 ## Usage Examples
@@ -80,15 +87,35 @@ print(f"Base features: {sisso_info['features']}")
 ### Encoding/Decoding
 
 ```python
-from mattervial.interpreter import encode_ofm, decode_ofm
+from mattervial.interpreter import encode_ofm, decode_ofm, encode_mm, decode_mm
 import pandas as pd
 
-# Encode OFM features to latent space
+# First usage automatically downloads decoder files (~50MB compressed)
 ofm_data = pd.read_csv("ofm_features.csv")
-latent_features = encode_ofm(ofm_data)
+latent_features = encode_ofm(ofm_data)  # Downloads files if needed
 
-# Decode back to OFM space
+# Decode back to OFM space (uses cached files)
 reconstructed_ofm = decode_ofm(latent_features)
+
+# MatMiner encoding/decoding
+mm_data = pd.read_csv("matminer_features.csv")
+latent_mm = encode_mm(mm_data)
+reconstructed_mm = decode_mm(latent_mm)
+```
+
+### Cache Management
+
+```python
+from mattervial.interpreter.decoder import get_decoder_cache_info, clear_decoder_cache
+
+# Check decoder cache status
+cache_info = get_decoder_cache_info()
+print(f"Cache status: {cache_info['status']}")
+print(f"Cache size: {cache_info['size_mb']} MB")
+print(f"Files present: {cache_info['critical_files_present']}/{cache_info['critical_files_total']}")
+
+# Clear cache to free disk space (files will re-download when needed)
+clear_decoder_cache()
 ```
 
 ## Interpretability Workflow

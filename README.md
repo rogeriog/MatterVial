@@ -1,7 +1,7 @@
 
 
 <div style="display: flex; align-items: center; justify-content: center; margin:0">
-    <img src="img/MATTERVial_logo.png" alt="MatterVial-logo" width=200>
+    <img src="img/MATTERVial_logo_small.png" alt="MatterVial-logo">
     <h1 style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; margin-left: 20px;">Materials Feature Extraction via Interpretable Artificial Learning</h1>
 </div>
 

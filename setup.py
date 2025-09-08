@@ -6,15 +6,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="mattervial",  # Package name
-    version="0.1.3",  # Version number
+    version="0.1.4",  # Updated version number
     author="Rogério A. Gouvêa",  # Add your name or the authorship group
     author_email="rogeriog.em@gmail.com",  # Add your email
     description="A package that uses pretrained graph-neural network models and symbolic regression formulas on material descriptors as featurizers for interpretable predictions in materials science.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rogeriog/MatterVial",  # URL to the project
-    packages=find_packages(include=['mattervial', 'mattervial.*', 'mattervial.packages.*', 'mattervial.packages.roost.*', 'mattervial.featurizers.formulas', 'mattervial.interpreter' ]),    
+    packages=find_packages(include=['mattervial', 'mattervial.*', 'mattervial.packages.*', 'mattervial.packages.roost.*', 'mattervial.featurizers.formulas', 'mattervial.interpreter' ]),
     include_package_data=True,  # Include non-Python files specified in MANIFEST.in
+    zip_safe=False,  # Prevent zip_safe issues with __file__ references
     license="MIT License",  # License type
     classifiers=[
     "Programming Language :: Python :: 3",
@@ -33,8 +34,9 @@ setup(
     "contextlib2",  # for managing stdout redirection
     "pickle-mixin",  # for loading and saving scalers
     "pymatgen>=2022.0.0",  # for handling crystal structures
-    "torch",
-    "torch_scatter",
+    'requests>=2.25.0',
+    # "torch",
+    # "torch_scatter",
    ],
     package_data={
         'mattervial': [
@@ -47,9 +49,11 @@ setup(
             'featurizers/formulas/*.txt'],
         'mattervial.interpreter': [
             'formulas/*.json',
+            'help_scripts/*',
             'shap_plots/**/*',
             'shap_values/**/*',
             'data/**/*',
+            'decoders/*'
         ],
     },
     entry_points={

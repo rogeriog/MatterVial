@@ -1,0 +1,1264 @@
+AtomicOrbitals|HOMO_character
+AtomicOrbitals|HOMO_element
+AtomicOrbitals|HOMO_energy
+AtomicOrbitals|LUMO_character
+AtomicOrbitals|LUMO_element
+AtomicOrbitals|LUMO_energy
+AtomicOrbitals|gap_AO
+AtomicPackingEfficiency|mean simul. packing efficiency
+AtomicPackingEfficiency|mean abs simul. packing efficiency
+AtomicPackingEfficiency|dist from 1 clusters |APE| < 0.010
+AtomicPackingEfficiency|dist from 3 clusters |APE| < 0.010
+AtomicPackingEfficiency|dist from 5 clusters |APE| < 0.010
+BandCenter|band center
+ElementFraction|H
+ElementFraction|Li
+ElementFraction|Be
+ElementFraction|B
+ElementFraction|C
+ElementFraction|N
+ElementFraction|O
+ElementFraction|F
+ElementFraction|Na
+ElementFraction|Mg
+ElementFraction|Al
+ElementFraction|Si
+ElementFraction|P
+ElementFraction|S
+ElementFraction|Cl
+ElementFraction|K
+ElementFraction|Ca
+ElementFraction|Sc
+ElementFraction|Ti
+ElementFraction|V
+ElementFraction|Cr
+ElementFraction|Mn
+ElementFraction|Fe
+ElementFraction|Co
+ElementFraction|Ni
+ElementFraction|Cu
+ElementFraction|Zn
+ElementFraction|Ga
+ElementFraction|Ge
+ElementFraction|As
+ElementFraction|Se
+ElementFraction|Br
+ElementFraction|Rb
+ElementFraction|Sr
+ElementFraction|Y
+ElementFraction|Zr
+ElementFraction|Nb
+ElementFraction|Mo
+ElementFraction|Tc
+ElementFraction|Ru
+ElementFraction|Rh
+ElementFraction|Pd
+ElementFraction|Ag
+ElementFraction|Cd
+ElementFraction|In
+ElementFraction|Sn
+ElementFraction|Sb
+ElementFraction|Te
+ElementFraction|I
+ElementFraction|Cs
+ElementFraction|Ba
+ElementFraction|La
+ElementFraction|Ce
+ElementFraction|Pr
+ElementFraction|Nd
+ElementFraction|Pm
+ElementFraction|Sm
+ElementFraction|Eu
+ElementFraction|Gd
+ElementFraction|Tb
+ElementFraction|Dy
+ElementFraction|Ho
+ElementFraction|Er
+ElementFraction|Tm
+ElementFraction|Yb
+ElementFraction|Lu
+ElementFraction|Hf
+ElementFraction|Ta
+ElementFraction|W
+ElementFraction|Re
+ElementFraction|Os
+ElementFraction|Ir
+ElementFraction|Pt
+ElementFraction|Au
+ElementFraction|Hg
+ElementFraction|Tl
+ElementFraction|Pb
+ElementFraction|Bi
+ElementFraction|Ac
+ElementFraction|Th
+ElementFraction|Pa
+ElementFraction|U
+ElementFraction|Np
+ElementFraction|Pu
+ElementProperty|MagpieData minimum Number
+ElementProperty|MagpieData maximum Number
+ElementProperty|MagpieData range Number
+ElementProperty|MagpieData mean Number
+ElementProperty|MagpieData avg_dev Number
+ElementProperty|MagpieData mode Number
+ElementProperty|MagpieData minimum MendeleevNumber
+ElementProperty|MagpieData maximum MendeleevNumber
+ElementProperty|MagpieData range MendeleevNumber
+ElementProperty|MagpieData mean MendeleevNumber
+ElementProperty|MagpieData avg_dev MendeleevNumber
+ElementProperty|MagpieData mode MendeleevNumber
+ElementProperty|MagpieData minimum AtomicWeight
+ElementProperty|MagpieData maximum AtomicWeight
+ElementProperty|MagpieData range AtomicWeight
+ElementProperty|MagpieData mean AtomicWeight
+ElementProperty|MagpieData avg_dev AtomicWeight
+ElementProperty|MagpieData mode AtomicWeight
+ElementProperty|MagpieData minimum MeltingT
+ElementProperty|MagpieData maximum MeltingT
+ElementProperty|MagpieData range MeltingT
+ElementProperty|MagpieData mean MeltingT
+ElementProperty|MagpieData avg_dev MeltingT
+ElementProperty|MagpieData mode MeltingT
+ElementProperty|MagpieData minimum Column
+ElementProperty|MagpieData maximum Column
+ElementProperty|MagpieData range Column
+ElementProperty|MagpieData mean Column
+ElementProperty|MagpieData avg_dev Column
+ElementProperty|MagpieData mode Column
+ElementProperty|MagpieData minimum Row
+ElementProperty|MagpieData maximum Row
+ElementProperty|MagpieData range Row
+ElementProperty|MagpieData mean Row
+ElementProperty|MagpieData avg_dev Row
+ElementProperty|MagpieData mode Row
+ElementProperty|MagpieData minimum CovalentRadius
+ElementProperty|MagpieData maximum CovalentRadius
+ElementProperty|MagpieData range CovalentRadius
+ElementProperty|MagpieData mean CovalentRadius
+ElementProperty|MagpieData avg_dev CovalentRadius
+ElementProperty|MagpieData mode CovalentRadius
+ElementProperty|MagpieData minimum Electronegativity
+ElementProperty|MagpieData maximum Electronegativity
+ElementProperty|MagpieData range Electronegativity
+ElementProperty|MagpieData mean Electronegativity
+ElementProperty|MagpieData avg_dev Electronegativity
+ElementProperty|MagpieData mode Electronegativity
+ElementProperty|MagpieData minimum NsValence
+ElementProperty|MagpieData maximum NsValence
+ElementProperty|MagpieData range NsValence
+ElementProperty|MagpieData mean NsValence
+ElementProperty|MagpieData avg_dev NsValence
+ElementProperty|MagpieData mode NsValence
+ElementProperty|MagpieData minimum NpValence
+ElementProperty|MagpieData maximum NpValence
+ElementProperty|MagpieData range NpValence
+ElementProperty|MagpieData mean NpValence
+ElementProperty|MagpieData avg_dev NpValence
+ElementProperty|MagpieData mode NpValence
+ElementProperty|MagpieData minimum NdValence
+ElementProperty|MagpieData maximum NdValence
+ElementProperty|MagpieData range NdValence
+ElementProperty|MagpieData mean NdValence
+ElementProperty|MagpieData avg_dev NdValence
+ElementProperty|MagpieData mode NdValence
+ElementProperty|MagpieData minimum NfValence
+ElementProperty|MagpieData maximum NfValence
+ElementProperty|MagpieData range NfValence
+ElementProperty|MagpieData mean NfValence
+ElementProperty|MagpieData avg_dev NfValence
+ElementProperty|MagpieData mode NfValence
+ElementProperty|MagpieData minimum NValence
+ElementProperty|MagpieData maximum NValence
+ElementProperty|MagpieData range NValence
+ElementProperty|MagpieData mean NValence
+ElementProperty|MagpieData avg_dev NValence
+ElementProperty|MagpieData mode NValence
+ElementProperty|MagpieData minimum NsUnfilled
+ElementProperty|MagpieData maximum NsUnfilled
+ElementProperty|MagpieData range NsUnfilled
+ElementProperty|MagpieData mean NsUnfilled
+ElementProperty|MagpieData avg_dev NsUnfilled
+ElementProperty|MagpieData mode NsUnfilled
+ElementProperty|MagpieData minimum NpUnfilled
+ElementProperty|MagpieData maximum NpUnfilled
+ElementProperty|MagpieData range NpUnfilled
+ElementProperty|MagpieData mean NpUnfilled
+ElementProperty|MagpieData avg_dev NpUnfilled
+ElementProperty|MagpieData mode NpUnfilled
+ElementProperty|MagpieData minimum NdUnfilled
+ElementProperty|MagpieData maximum NdUnfilled
+ElementProperty|MagpieData range NdUnfilled
+ElementProperty|MagpieData mean NdUnfilled
+ElementProperty|MagpieData avg_dev NdUnfilled
+ElementProperty|MagpieData mode NdUnfilled
+ElementProperty|MagpieData minimum NfUnfilled
+ElementProperty|MagpieData maximum NfUnfilled
+ElementProperty|MagpieData range NfUnfilled
+ElementProperty|MagpieData mean NfUnfilled
+ElementProperty|MagpieData avg_dev NfUnfilled
+ElementProperty|MagpieData mode NfUnfilled
+ElementProperty|MagpieData minimum NUnfilled
+ElementProperty|MagpieData maximum NUnfilled
+ElementProperty|MagpieData range NUnfilled
+ElementProperty|MagpieData mean NUnfilled
+ElementProperty|MagpieData avg_dev NUnfilled
+ElementProperty|MagpieData mode NUnfilled
+ElementProperty|MagpieData minimum GSvolume_pa
+ElementProperty|MagpieData maximum GSvolume_pa
+ElementProperty|MagpieData range GSvolume_pa
+ElementProperty|MagpieData mean GSvolume_pa
+ElementProperty|MagpieData avg_dev GSvolume_pa
+ElementProperty|MagpieData mode GSvolume_pa
+ElementProperty|MagpieData minimum GSbandgap
+ElementProperty|MagpieData maximum GSbandgap
+ElementProperty|MagpieData range GSbandgap
+ElementProperty|MagpieData mean GSbandgap
+ElementProperty|MagpieData avg_dev GSbandgap
+ElementProperty|MagpieData mode GSbandgap
+ElementProperty|MagpieData minimum GSmagmom
+ElementProperty|MagpieData maximum GSmagmom
+ElementProperty|MagpieData range GSmagmom
+ElementProperty|MagpieData mean GSmagmom
+ElementProperty|MagpieData avg_dev GSmagmom
+ElementProperty|MagpieData mode GSmagmom
+ElementProperty|MagpieData minimum SpaceGroupNumber
+ElementProperty|MagpieData maximum SpaceGroupNumber
+ElementProperty|MagpieData range SpaceGroupNumber
+ElementProperty|MagpieData mean SpaceGroupNumber
+ElementProperty|MagpieData avg_dev SpaceGroupNumber
+ElementProperty|MagpieData mode SpaceGroupNumber
+IonProperty|max ionic char
+IonProperty|avg ionic char
+Miedema|Miedema_deltaH_inter
+Miedema|Miedema_deltaH_amor
+Miedema|Miedema_deltaH_ss_min
+Stoichiometry|0-norm
+Stoichiometry|2-norm
+Stoichiometry|3-norm
+Stoichiometry|5-norm
+Stoichiometry|7-norm
+Stoichiometry|10-norm
+TMetalFraction|transition metal fraction
+ValenceOrbital|avg s valence electrons
+ValenceOrbital|avg p valence electrons
+ValenceOrbital|avg d valence electrons
+ValenceOrbital|avg f valence electrons
+ValenceOrbital|frac s valence electrons
+ValenceOrbital|frac p valence electrons
+ValenceOrbital|frac d valence electrons
+ValenceOrbital|frac f valence electrons
+YangSolidSolution|Yang omega
+YangSolidSolution|Yang delta
+ElectronegativityDiff|minimum EN difference
+ElectronegativityDiff|maximum EN difference
+ElectronegativityDiff|range EN difference
+ElectronegativityDiff|mean EN difference
+ElectronegativityDiff|std_dev EN difference
+OxidationStates|minimum oxidation state
+OxidationStates|maximum oxidation state
+OxidationStates|range oxidation state
+OxidationStates|std_dev oxidation state
+DensityFeatures|density
+DensityFeatures|vpa
+DensityFeatures|packing fraction
+GlobalSymmetryFeatures|spacegroup_num
+GlobalSymmetryFeatures|crystal_system
+GlobalSymmetryFeatures|crystal_system_int
+GlobalSymmetryFeatures|is_centrosymmetric
+CoulombMatrix|coulomb matrix eig 0
+CoulombMatrix|coulomb matrix eig 1
+CoulombMatrix|coulomb matrix eig 2
+CoulombMatrix|coulomb matrix eig 3
+CoulombMatrix|coulomb matrix eig 4
+CoulombMatrix|coulomb matrix eig 5
+CoulombMatrix|coulomb matrix eig 6
+CoulombMatrix|coulomb matrix eig 7
+CoulombMatrix|coulomb matrix eig 8
+CoulombMatrix|coulomb matrix eig 9
+CoulombMatrix|coulomb matrix eig 10
+CoulombMatrix|coulomb matrix eig 11
+CoulombMatrix|coulomb matrix eig 12
+CoulombMatrix|coulomb matrix eig 13
+CoulombMatrix|coulomb matrix eig 14
+CoulombMatrix|coulomb matrix eig 15
+CoulombMatrix|coulomb matrix eig 16
+CoulombMatrix|coulomb matrix eig 17
+CoulombMatrix|coulomb matrix eig 18
+CoulombMatrix|coulomb matrix eig 19
+CoulombMatrix|coulomb matrix eig 20
+CoulombMatrix|coulomb matrix eig 21
+CoulombMatrix|coulomb matrix eig 22
+CoulombMatrix|coulomb matrix eig 23
+CoulombMatrix|coulomb matrix eig 24
+CoulombMatrix|coulomb matrix eig 25
+CoulombMatrix|coulomb matrix eig 26
+CoulombMatrix|coulomb matrix eig 27
+CoulombMatrix|coulomb matrix eig 28
+CoulombMatrix|coulomb matrix eig 29
+CoulombMatrix|coulomb matrix eig 30
+CoulombMatrix|coulomb matrix eig 31
+CoulombMatrix|coulomb matrix eig 32
+CoulombMatrix|coulomb matrix eig 33
+CoulombMatrix|coulomb matrix eig 34
+CoulombMatrix|coulomb matrix eig 35
+CoulombMatrix|coulomb matrix eig 36
+CoulombMatrix|coulomb matrix eig 37
+CoulombMatrix|coulomb matrix eig 38
+CoulombMatrix|coulomb matrix eig 39
+CoulombMatrix|coulomb matrix eig 40
+CoulombMatrix|coulomb matrix eig 41
+CoulombMatrix|coulomb matrix eig 42
+CoulombMatrix|coulomb matrix eig 43
+CoulombMatrix|coulomb matrix eig 44
+CoulombMatrix|coulomb matrix eig 45
+CoulombMatrix|coulomb matrix eig 46
+CoulombMatrix|coulomb matrix eig 47
+CoulombMatrix|coulomb matrix eig 48
+CoulombMatrix|coulomb matrix eig 49
+CoulombMatrix|coulomb matrix eig 50
+CoulombMatrix|coulomb matrix eig 51
+CoulombMatrix|coulomb matrix eig 52
+CoulombMatrix|coulomb matrix eig 53
+CoulombMatrix|coulomb matrix eig 54
+CoulombMatrix|coulomb matrix eig 55
+CoulombMatrix|coulomb matrix eig 56
+CoulombMatrix|coulomb matrix eig 57
+CoulombMatrix|coulomb matrix eig 58
+CoulombMatrix|coulomb matrix eig 59
+CoulombMatrix|coulomb matrix eig 60
+CoulombMatrix|coulomb matrix eig 61
+CoulombMatrix|coulomb matrix eig 62
+CoulombMatrix|coulomb matrix eig 63
+CoulombMatrix|coulomb matrix eig 64
+CoulombMatrix|coulomb matrix eig 65
+CoulombMatrix|coulomb matrix eig 66
+CoulombMatrix|coulomb matrix eig 67
+CoulombMatrix|coulomb matrix eig 68
+CoulombMatrix|coulomb matrix eig 69
+CoulombMatrix|coulomb matrix eig 70
+CoulombMatrix|coulomb matrix eig 71
+CoulombMatrix|coulomb matrix eig 72
+CoulombMatrix|coulomb matrix eig 73
+CoulombMatrix|coulomb matrix eig 74
+CoulombMatrix|coulomb matrix eig 75
+CoulombMatrix|coulomb matrix eig 76
+CoulombMatrix|coulomb matrix eig 77
+CoulombMatrix|coulomb matrix eig 78
+CoulombMatrix|coulomb matrix eig 79
+SineCoulombMatrix|sine coulomb matrix eig 0
+SineCoulombMatrix|sine coulomb matrix eig 1
+SineCoulombMatrix|sine coulomb matrix eig 2
+SineCoulombMatrix|sine coulomb matrix eig 3
+SineCoulombMatrix|sine coulomb matrix eig 4
+SineCoulombMatrix|sine coulomb matrix eig 5
+SineCoulombMatrix|sine coulomb matrix eig 6
+SineCoulombMatrix|sine coulomb matrix eig 7
+SineCoulombMatrix|sine coulomb matrix eig 8
+SineCoulombMatrix|sine coulomb matrix eig 9
+SineCoulombMatrix|sine coulomb matrix eig 10
+SineCoulombMatrix|sine coulomb matrix eig 11
+SineCoulombMatrix|sine coulomb matrix eig 12
+SineCoulombMatrix|sine coulomb matrix eig 13
+SineCoulombMatrix|sine coulomb matrix eig 14
+SineCoulombMatrix|sine coulomb matrix eig 15
+SineCoulombMatrix|sine coulomb matrix eig 16
+SineCoulombMatrix|sine coulomb matrix eig 17
+SineCoulombMatrix|sine coulomb matrix eig 18
+SineCoulombMatrix|sine coulomb matrix eig 19
+SineCoulombMatrix|sine coulomb matrix eig 20
+SineCoulombMatrix|sine coulomb matrix eig 21
+SineCoulombMatrix|sine coulomb matrix eig 22
+SineCoulombMatrix|sine coulomb matrix eig 23
+SineCoulombMatrix|sine coulomb matrix eig 24
+SineCoulombMatrix|sine coulomb matrix eig 25
+SineCoulombMatrix|sine coulomb matrix eig 26
+SineCoulombMatrix|sine coulomb matrix eig 27
+SineCoulombMatrix|sine coulomb matrix eig 28
+SineCoulombMatrix|sine coulomb matrix eig 29
+SineCoulombMatrix|sine coulomb matrix eig 30
+SineCoulombMatrix|sine coulomb matrix eig 31
+SineCoulombMatrix|sine coulomb matrix eig 32
+SineCoulombMatrix|sine coulomb matrix eig 33
+SineCoulombMatrix|sine coulomb matrix eig 34
+SineCoulombMatrix|sine coulomb matrix eig 35
+SineCoulombMatrix|sine coulomb matrix eig 36
+SineCoulombMatrix|sine coulomb matrix eig 37
+SineCoulombMatrix|sine coulomb matrix eig 38
+SineCoulombMatrix|sine coulomb matrix eig 39
+SineCoulombMatrix|sine coulomb matrix eig 40
+SineCoulombMatrix|sine coulomb matrix eig 41
+SineCoulombMatrix|sine coulomb matrix eig 42
+SineCoulombMatrix|sine coulomb matrix eig 43
+SineCoulombMatrix|sine coulomb matrix eig 44
+SineCoulombMatrix|sine coulomb matrix eig 45
+SineCoulombMatrix|sine coulomb matrix eig 46
+SineCoulombMatrix|sine coulomb matrix eig 47
+SineCoulombMatrix|sine coulomb matrix eig 48
+SineCoulombMatrix|sine coulomb matrix eig 49
+SineCoulombMatrix|sine coulomb matrix eig 50
+SineCoulombMatrix|sine coulomb matrix eig 51
+SineCoulombMatrix|sine coulomb matrix eig 52
+SineCoulombMatrix|sine coulomb matrix eig 53
+SineCoulombMatrix|sine coulomb matrix eig 54
+SineCoulombMatrix|sine coulomb matrix eig 55
+SineCoulombMatrix|sine coulomb matrix eig 56
+SineCoulombMatrix|sine coulomb matrix eig 57
+SineCoulombMatrix|sine coulomb matrix eig 58
+SineCoulombMatrix|sine coulomb matrix eig 59
+SineCoulombMatrix|sine coulomb matrix eig 60
+SineCoulombMatrix|sine coulomb matrix eig 61
+SineCoulombMatrix|sine coulomb matrix eig 62
+SineCoulombMatrix|sine coulomb matrix eig 63
+SineCoulombMatrix|sine coulomb matrix eig 64
+SineCoulombMatrix|sine coulomb matrix eig 65
+SineCoulombMatrix|sine coulomb matrix eig 66
+SineCoulombMatrix|sine coulomb matrix eig 67
+SineCoulombMatrix|sine coulomb matrix eig 68
+SineCoulombMatrix|sine coulomb matrix eig 69
+SineCoulombMatrix|sine coulomb matrix eig 70
+SineCoulombMatrix|sine coulomb matrix eig 71
+SineCoulombMatrix|sine coulomb matrix eig 72
+SineCoulombMatrix|sine coulomb matrix eig 73
+SineCoulombMatrix|sine coulomb matrix eig 74
+SineCoulombMatrix|sine coulomb matrix eig 75
+SineCoulombMatrix|sine coulomb matrix eig 76
+SineCoulombMatrix|sine coulomb matrix eig 77
+SineCoulombMatrix|sine coulomb matrix eig 78
+SineCoulombMatrix|sine coulomb matrix eig 79
+BondFractions|Ag - Ag bond frac.
+BondFractions|Al - Al bond frac.
+BondFractions|Al - O bond frac.
+BondFractions|As - As bond frac.
+BondFractions|Ba - Ba bond frac.
+BondFractions|Bi - Bi bond frac.
+BondFractions|C - C bond frac.
+BondFractions|Ca - Ca bond frac.
+BondFractions|Ca - O bond frac.
+BondFractions|Cd - Cd bond frac.
+BondFractions|Co - Co bond frac.
+BondFractions|Co - O bond frac.
+BondFractions|Cr - Cr bond frac.
+BondFractions|Cs - Cs bond frac.
+BondFractions|Cu - Cu bond frac.
+BondFractions|Cu - O bond frac.
+BondFractions|Fe - Fe bond frac.
+BondFractions|Fe - O bond frac.
+BondFractions|Ga - Ga bond frac.
+BondFractions|Ge - Ge bond frac.
+BondFractions|Hf - Hf bond frac.
+BondFractions|In - In bond frac.
+BondFractions|K - K bond frac.
+BondFractions|K - O bond frac.
+BondFractions|La - La bond frac.
+BondFractions|La - O bond frac.
+BondFractions|Li - Li bond frac.
+BondFractions|Li - O bond frac.
+BondFractions|Mg - Mg bond frac.
+BondFractions|Mg - O bond frac.
+BondFractions|Mn - Mn bond frac.
+BondFractions|Mn - O bond frac.
+BondFractions|Mo - Mo bond frac.
+BondFractions|Mo - O bond frac.
+BondFractions|Na - Na bond frac.
+BondFractions|Na - O bond frac.
+BondFractions|Ni - Ni bond frac.
+BondFractions|Ni - O bond frac.
+BondFractions|O - O bond frac.
+BondFractions|O - Sb bond frac.
+BondFractions|O - Si bond frac.
+BondFractions|O - Ti bond frac.
+BondFractions|O - W bond frac.
+BondFractions|O - Zn bond frac.
+BondFractions|P - P bond frac.
+BondFractions|Rb - Rb bond frac.
+BondFractions|Sb - Sb bond frac.
+BondFractions|Si - Si bond frac.
+BondFractions|Sn - Sn bond frac.
+BondFractions|Sr - Sr bond frac.
+BondFractions|Ti - Ti bond frac.
+BondFractions|V - V bond frac.
+BondFractions|W - W bond frac.
+BondFractions|Y - Y bond frac.
+BondFractions|Zn - Zn bond frac.
+BondFractions|Zr - Zr bond frac.
+StructuralHeterogeneity|mean absolute deviation in relative bond length
+StructuralHeterogeneity|max relative bond length
+StructuralHeterogeneity|min relative bond length
+StructuralHeterogeneity|minimum neighbor distance variation
+StructuralHeterogeneity|maximum neighbor distance variation
+StructuralHeterogeneity|range neighbor distance variation
+StructuralHeterogeneity|mean neighbor distance variation
+StructuralHeterogeneity|avg_dev neighbor distance variation
+StructuralHeterogeneity|mean absolute deviation in relative cell size
+MaximumPackingEfficiency|max packing efficiency
+ChemicalOrdering|mean ordering parameter shell 1
+ChemicalOrdering|mean ordering parameter shell 2
+ChemicalOrdering|mean ordering parameter shell 3
+XRDPowderPattern|xrd_0
+XRDPowderPattern|xrd_1
+XRDPowderPattern|xrd_2
+XRDPowderPattern|xrd_3
+XRDPowderPattern|xrd_4
+XRDPowderPattern|xrd_5
+XRDPowderPattern|xrd_6
+XRDPowderPattern|xrd_7
+XRDPowderPattern|xrd_8
+XRDPowderPattern|xrd_9
+XRDPowderPattern|xrd_10
+XRDPowderPattern|xrd_11
+XRDPowderPattern|xrd_12
+XRDPowderPattern|xrd_13
+XRDPowderPattern|xrd_14
+XRDPowderPattern|xrd_15
+XRDPowderPattern|xrd_16
+XRDPowderPattern|xrd_17
+XRDPowderPattern|xrd_18
+XRDPowderPattern|xrd_19
+XRDPowderPattern|xrd_20
+XRDPowderPattern|xrd_21
+XRDPowderPattern|xrd_22
+XRDPowderPattern|xrd_23
+XRDPowderPattern|xrd_24
+XRDPowderPattern|xrd_25
+XRDPowderPattern|xrd_26
+XRDPowderPattern|xrd_27
+XRDPowderPattern|xrd_28
+XRDPowderPattern|xrd_29
+XRDPowderPattern|xrd_30
+XRDPowderPattern|xrd_31
+XRDPowderPattern|xrd_32
+XRDPowderPattern|xrd_33
+XRDPowderPattern|xrd_34
+XRDPowderPattern|xrd_35
+XRDPowderPattern|xrd_36
+XRDPowderPattern|xrd_37
+XRDPowderPattern|xrd_38
+XRDPowderPattern|xrd_39
+XRDPowderPattern|xrd_40
+XRDPowderPattern|xrd_41
+XRDPowderPattern|xrd_42
+XRDPowderPattern|xrd_43
+XRDPowderPattern|xrd_44
+XRDPowderPattern|xrd_45
+XRDPowderPattern|xrd_46
+XRDPowderPattern|xrd_47
+XRDPowderPattern|xrd_48
+XRDPowderPattern|xrd_49
+XRDPowderPattern|xrd_50
+XRDPowderPattern|xrd_51
+XRDPowderPattern|xrd_52
+XRDPowderPattern|xrd_53
+XRDPowderPattern|xrd_54
+XRDPowderPattern|xrd_55
+XRDPowderPattern|xrd_56
+XRDPowderPattern|xrd_57
+XRDPowderPattern|xrd_58
+XRDPowderPattern|xrd_59
+XRDPowderPattern|xrd_60
+XRDPowderPattern|xrd_61
+XRDPowderPattern|xrd_62
+XRDPowderPattern|xrd_63
+XRDPowderPattern|xrd_64
+XRDPowderPattern|xrd_65
+XRDPowderPattern|xrd_66
+XRDPowderPattern|xrd_67
+XRDPowderPattern|xrd_68
+XRDPowderPattern|xrd_69
+XRDPowderPattern|xrd_70
+XRDPowderPattern|xrd_71
+XRDPowderPattern|xrd_72
+XRDPowderPattern|xrd_73
+XRDPowderPattern|xrd_74
+XRDPowderPattern|xrd_75
+XRDPowderPattern|xrd_76
+XRDPowderPattern|xrd_77
+XRDPowderPattern|xrd_78
+XRDPowderPattern|xrd_79
+XRDPowderPattern|xrd_80
+XRDPowderPattern|xrd_81
+XRDPowderPattern|xrd_82
+XRDPowderPattern|xrd_83
+XRDPowderPattern|xrd_84
+XRDPowderPattern|xrd_85
+XRDPowderPattern|xrd_86
+XRDPowderPattern|xrd_87
+XRDPowderPattern|xrd_88
+XRDPowderPattern|xrd_89
+XRDPowderPattern|xrd_90
+XRDPowderPattern|xrd_91
+XRDPowderPattern|xrd_92
+XRDPowderPattern|xrd_93
+XRDPowderPattern|xrd_94
+XRDPowderPattern|xrd_95
+XRDPowderPattern|xrd_96
+XRDPowderPattern|xrd_97
+XRDPowderPattern|xrd_98
+XRDPowderPattern|xrd_99
+XRDPowderPattern|xrd_100
+XRDPowderPattern|xrd_101
+XRDPowderPattern|xrd_102
+XRDPowderPattern|xrd_103
+XRDPowderPattern|xrd_104
+XRDPowderPattern|xrd_105
+XRDPowderPattern|xrd_106
+XRDPowderPattern|xrd_107
+XRDPowderPattern|xrd_108
+XRDPowderPattern|xrd_109
+XRDPowderPattern|xrd_110
+XRDPowderPattern|xrd_111
+XRDPowderPattern|xrd_112
+XRDPowderPattern|xrd_113
+XRDPowderPattern|xrd_114
+XRDPowderPattern|xrd_115
+XRDPowderPattern|xrd_116
+XRDPowderPattern|xrd_117
+XRDPowderPattern|xrd_118
+XRDPowderPattern|xrd_119
+XRDPowderPattern|xrd_120
+XRDPowderPattern|xrd_121
+XRDPowderPattern|xrd_122
+XRDPowderPattern|xrd_123
+XRDPowderPattern|xrd_124
+XRDPowderPattern|xrd_125
+XRDPowderPattern|xrd_126
+XRDPowderPattern|xrd_127
+RadialDistributionFunction|radial distribution function|d_0.70
+RadialDistributionFunction|radial distribution function|d_0.80
+RadialDistributionFunction|radial distribution function|d_0.90
+RadialDistributionFunction|radial distribution function|d_1.00
+RadialDistributionFunction|radial distribution function|d_1.10
+RadialDistributionFunction|radial distribution function|d_1.20
+RadialDistributionFunction|radial distribution function|d_1.30
+RadialDistributionFunction|radial distribution function|d_1.40
+RadialDistributionFunction|radial distribution function|d_1.50
+RadialDistributionFunction|radial distribution function|d_1.60
+RadialDistributionFunction|radial distribution function|d_1.70
+RadialDistributionFunction|radial distribution function|d_1.80
+RadialDistributionFunction|radial distribution function|d_1.90
+RadialDistributionFunction|radial distribution function|d_2.00
+RadialDistributionFunction|radial distribution function|d_2.10
+RadialDistributionFunction|radial distribution function|d_2.20
+RadialDistributionFunction|radial distribution function|d_2.30
+RadialDistributionFunction|radial distribution function|d_2.40
+RadialDistributionFunction|radial distribution function|d_2.50
+RadialDistributionFunction|radial distribution function|d_2.60
+RadialDistributionFunction|radial distribution function|d_2.70
+RadialDistributionFunction|radial distribution function|d_2.80
+RadialDistributionFunction|radial distribution function|d_2.90
+RadialDistributionFunction|radial distribution function|d_3.00
+RadialDistributionFunction|radial distribution function|d_3.10
+RadialDistributionFunction|radial distribution function|d_3.20
+RadialDistributionFunction|radial distribution function|d_3.30
+RadialDistributionFunction|radial distribution function|d_3.40
+RadialDistributionFunction|radial distribution function|d_3.50
+RadialDistributionFunction|radial distribution function|d_3.60
+RadialDistributionFunction|radial distribution function|d_3.70
+RadialDistributionFunction|radial distribution function|d_3.80
+RadialDistributionFunction|radial distribution function|d_3.90
+RadialDistributionFunction|radial distribution function|d_4.00
+RadialDistributionFunction|radial distribution function|d_4.10
+RadialDistributionFunction|radial distribution function|d_4.20
+RadialDistributionFunction|radial distribution function|d_4.30
+RadialDistributionFunction|radial distribution function|d_4.40
+RadialDistributionFunction|radial distribution function|d_4.50
+RadialDistributionFunction|radial distribution function|d_4.60
+RadialDistributionFunction|radial distribution function|d_4.70
+RadialDistributionFunction|radial distribution function|d_4.80
+RadialDistributionFunction|radial distribution function|d_4.90
+AGNIFingerPrint|mean AGNI eta=8.00e-01
+AGNIFingerPrint|std_dev AGNI eta=8.00e-01
+AGNIFingerPrint|mean AGNI eta=1.23e+00
+AGNIFingerPrint|std_dev AGNI eta=1.23e+00
+AGNIFingerPrint|mean AGNI eta=1.88e+00
+AGNIFingerPrint|std_dev AGNI eta=1.88e+00
+AGNIFingerPrint|mean AGNI eta=2.89e+00
+AGNIFingerPrint|std_dev AGNI eta=2.89e+00
+AGNIFingerPrint|mean AGNI eta=4.43e+00
+AGNIFingerPrint|std_dev AGNI eta=4.43e+00
+AGNIFingerPrint|mean AGNI eta=6.80e+00
+AGNIFingerPrint|std_dev AGNI eta=6.80e+00
+AGNIFingerPrint|mean AGNI eta=1.04e+01
+AGNIFingerPrint|std_dev AGNI eta=1.04e+01
+AGNIFingerPrint|mean AGNI eta=1.60e+01
+AGNIFingerPrint|std_dev AGNI eta=1.60e+01
+AGNIFingerPrint|mean AGNI dir=x eta=8.00e-01
+AGNIFingerPrint|std_dev AGNI dir=x eta=8.00e-01
+AGNIFingerPrint|mean AGNI dir=x eta=1.23e+00
+AGNIFingerPrint|std_dev AGNI dir=x eta=1.23e+00
+AGNIFingerPrint|mean AGNI dir=x eta=1.88e+00
+AGNIFingerPrint|std_dev AGNI dir=x eta=1.88e+00
+AGNIFingerPrint|mean AGNI dir=x eta=2.89e+00
+AGNIFingerPrint|std_dev AGNI dir=x eta=2.89e+00
+AGNIFingerPrint|mean AGNI dir=x eta=4.43e+00
+AGNIFingerPrint|std_dev AGNI dir=x eta=4.43e+00
+AGNIFingerPrint|mean AGNI dir=x eta=6.80e+00
+AGNIFingerPrint|std_dev AGNI dir=x eta=6.80e+00
+AGNIFingerPrint|mean AGNI dir=x eta=1.04e+01
+AGNIFingerPrint|std_dev AGNI dir=x eta=1.04e+01
+AGNIFingerPrint|mean AGNI dir=x eta=1.60e+01
+AGNIFingerPrint|std_dev AGNI dir=x eta=1.60e+01
+AGNIFingerPrint|mean AGNI dir=y eta=8.00e-01
+AGNIFingerPrint|std_dev AGNI dir=y eta=8.00e-01
+AGNIFingerPrint|mean AGNI dir=y eta=1.23e+00
+AGNIFingerPrint|std_dev AGNI dir=y eta=1.23e+00
+AGNIFingerPrint|mean AGNI dir=y eta=1.88e+00
+AGNIFingerPrint|std_dev AGNI dir=y eta=1.88e+00
+AGNIFingerPrint|mean AGNI dir=y eta=2.89e+00
+AGNIFingerPrint|std_dev AGNI dir=y eta=2.89e+00
+AGNIFingerPrint|mean AGNI dir=y eta=4.43e+00
+AGNIFingerPrint|std_dev AGNI dir=y eta=4.43e+00
+AGNIFingerPrint|mean AGNI dir=y eta=6.80e+00
+AGNIFingerPrint|std_dev AGNI dir=y eta=6.80e+00
+AGNIFingerPrint|mean AGNI dir=y eta=1.04e+01
+AGNIFingerPrint|std_dev AGNI dir=y eta=1.04e+01
+AGNIFingerPrint|mean AGNI dir=y eta=1.60e+01
+AGNIFingerPrint|std_dev AGNI dir=y eta=1.60e+01
+AGNIFingerPrint|mean AGNI dir=z eta=8.00e-01
+AGNIFingerPrint|std_dev AGNI dir=z eta=8.00e-01
+AGNIFingerPrint|mean AGNI dir=z eta=1.23e+00
+AGNIFingerPrint|std_dev AGNI dir=z eta=1.23e+00
+AGNIFingerPrint|mean AGNI dir=z eta=1.88e+00
+AGNIFingerPrint|std_dev AGNI dir=z eta=1.88e+00
+AGNIFingerPrint|mean AGNI dir=z eta=2.89e+00
+AGNIFingerPrint|std_dev AGNI dir=z eta=2.89e+00
+AGNIFingerPrint|mean AGNI dir=z eta=4.43e+00
+AGNIFingerPrint|std_dev AGNI dir=z eta=4.43e+00
+AGNIFingerPrint|mean AGNI dir=z eta=6.80e+00
+AGNIFingerPrint|std_dev AGNI dir=z eta=6.80e+00
+AGNIFingerPrint|mean AGNI dir=z eta=1.04e+01
+AGNIFingerPrint|std_dev AGNI dir=z eta=1.04e+01
+AGNIFingerPrint|mean AGNI dir=z eta=1.60e+01
+AGNIFingerPrint|std_dev AGNI dir=z eta=1.60e+01
+AverageBondAngle|mean Average bond angle
+AverageBondAngle|std_dev Average bond angle
+AverageBondLength|mean Average bond length
+AverageBondLength|std_dev Average bond length
+BondOrientationParameter|mean BOOP Q l=1
+BondOrientationParameter|std_dev BOOP Q l=1
+BondOrientationParameter|mean BOOP Q l=2
+BondOrientationParameter|std_dev BOOP Q l=2
+BondOrientationParameter|mean BOOP Q l=3
+BondOrientationParameter|std_dev BOOP Q l=3
+BondOrientationParameter|mean BOOP Q l=4
+BondOrientationParameter|std_dev BOOP Q l=4
+BondOrientationParameter|mean BOOP Q l=5
+BondOrientationParameter|std_dev BOOP Q l=5
+BondOrientationParameter|mean BOOP Q l=6
+BondOrientationParameter|std_dev BOOP Q l=6
+BondOrientationParameter|mean BOOP Q l=7
+BondOrientationParameter|std_dev BOOP Q l=7
+BondOrientationParameter|mean BOOP Q l=8
+BondOrientationParameter|std_dev BOOP Q l=8
+BondOrientationParameter|mean BOOP Q l=9
+BondOrientationParameter|std_dev BOOP Q l=9
+BondOrientationParameter|mean BOOP Q l=10
+BondOrientationParameter|std_dev BOOP Q l=10
+ChemEnvSiteFingerprint|mean S:1
+ChemEnvSiteFingerprint|std_dev S:1
+ChemEnvSiteFingerprint|mean L:2
+ChemEnvSiteFingerprint|std_dev L:2
+ChemEnvSiteFingerprint|mean A:2
+ChemEnvSiteFingerprint|std_dev A:2
+ChemEnvSiteFingerprint|mean TL:3
+ChemEnvSiteFingerprint|std_dev TL:3
+ChemEnvSiteFingerprint|mean TY:3
+ChemEnvSiteFingerprint|std_dev TY:3
+ChemEnvSiteFingerprint|mean TS:3
+ChemEnvSiteFingerprint|std_dev TS:3
+ChemEnvSiteFingerprint|mean T:4
+ChemEnvSiteFingerprint|std_dev T:4
+ChemEnvSiteFingerprint|mean S:4
+ChemEnvSiteFingerprint|std_dev S:4
+ChemEnvSiteFingerprint|mean SY:4
+ChemEnvSiteFingerprint|std_dev SY:4
+ChemEnvSiteFingerprint|mean SS:4
+ChemEnvSiteFingerprint|std_dev SS:4
+ChemEnvSiteFingerprint|mean PP:5
+ChemEnvSiteFingerprint|std_dev PP:5
+ChemEnvSiteFingerprint|mean S:5
+ChemEnvSiteFingerprint|std_dev S:5
+ChemEnvSiteFingerprint|mean T:5
+ChemEnvSiteFingerprint|std_dev T:5
+ChemEnvSiteFingerprint|mean O:6
+ChemEnvSiteFingerprint|std_dev O:6
+ChemEnvSiteFingerprint|mean T:6
+ChemEnvSiteFingerprint|std_dev T:6
+ChemEnvSiteFingerprint|mean PP:6
+ChemEnvSiteFingerprint|std_dev PP:6
+ChemEnvSiteFingerprint|mean PB:7
+ChemEnvSiteFingerprint|std_dev PB:7
+ChemEnvSiteFingerprint|mean ST:7
+ChemEnvSiteFingerprint|std_dev ST:7
+ChemEnvSiteFingerprint|mean ET:7
+ChemEnvSiteFingerprint|std_dev ET:7
+ChemEnvSiteFingerprint|mean FO:7
+ChemEnvSiteFingerprint|std_dev FO:7
+ChemEnvSiteFingerprint|mean C:8
+ChemEnvSiteFingerprint|std_dev C:8
+ChemEnvSiteFingerprint|mean SA:8
+ChemEnvSiteFingerprint|std_dev SA:8
+ChemEnvSiteFingerprint|mean SBT:8
+ChemEnvSiteFingerprint|std_dev SBT:8
+ChemEnvSiteFingerprint|mean TBT:8
+ChemEnvSiteFingerprint|std_dev TBT:8
+ChemEnvSiteFingerprint|mean DD:8
+ChemEnvSiteFingerprint|std_dev DD:8
+ChemEnvSiteFingerprint|mean DDPN:8
+ChemEnvSiteFingerprint|std_dev DDPN:8
+ChemEnvSiteFingerprint|mean HB:8
+ChemEnvSiteFingerprint|std_dev HB:8
+ChemEnvSiteFingerprint|mean BO_1:8
+ChemEnvSiteFingerprint|std_dev BO_1:8
+ChemEnvSiteFingerprint|mean BO_2:8
+ChemEnvSiteFingerprint|std_dev BO_2:8
+ChemEnvSiteFingerprint|mean BO_3:8
+ChemEnvSiteFingerprint|std_dev BO_3:8
+ChemEnvSiteFingerprint|mean TC:9
+ChemEnvSiteFingerprint|std_dev TC:9
+ChemEnvSiteFingerprint|mean TT_1:9
+ChemEnvSiteFingerprint|std_dev TT_1:9
+ChemEnvSiteFingerprint|mean TT_2:9
+ChemEnvSiteFingerprint|std_dev TT_2:9
+ChemEnvSiteFingerprint|mean TT_3:9
+ChemEnvSiteFingerprint|std_dev TT_3:9
+ChemEnvSiteFingerprint|mean HD:9
+ChemEnvSiteFingerprint|std_dev HD:9
+ChemEnvSiteFingerprint|mean TI:9
+ChemEnvSiteFingerprint|std_dev TI:9
+ChemEnvSiteFingerprint|mean SMA:9
+ChemEnvSiteFingerprint|std_dev SMA:9
+ChemEnvSiteFingerprint|mean SS:9
+ChemEnvSiteFingerprint|std_dev SS:9
+ChemEnvSiteFingerprint|mean TO_1:9
+ChemEnvSiteFingerprint|std_dev TO_1:9
+ChemEnvSiteFingerprint|mean TO_2:9
+ChemEnvSiteFingerprint|std_dev TO_2:9
+ChemEnvSiteFingerprint|mean TO_3:9
+ChemEnvSiteFingerprint|std_dev TO_3:9
+ChemEnvSiteFingerprint|mean SH:13
+ChemEnvSiteFingerprint|std_dev SH:13
+ChemEnvSiteFingerprint|mean DD:20
+ChemEnvSiteFingerprint|std_dev DD:20
+CoordinationNumber|mean CN_VoronoiNN
+CoordinationNumber|std_dev CN_VoronoiNN
+CrystalNNFingerprint|mean wt CN_1
+CrystalNNFingerprint|std_dev wt CN_1
+CrystalNNFingerprint|mean sgl_bd CN_1
+CrystalNNFingerprint|std_dev sgl_bd CN_1
+CrystalNNFingerprint|mean wt CN_2
+CrystalNNFingerprint|std_dev wt CN_2
+CrystalNNFingerprint|mean L-shaped CN_2
+CrystalNNFingerprint|std_dev L-shaped CN_2
+CrystalNNFingerprint|mean water-like CN_2
+CrystalNNFingerprint|std_dev water-like CN_2
+CrystalNNFingerprint|mean bent 120 degrees CN_2
+CrystalNNFingerprint|std_dev bent 120 degrees CN_2
+CrystalNNFingerprint|mean bent 150 degrees CN_2
+CrystalNNFingerprint|std_dev bent 150 degrees CN_2
+CrystalNNFingerprint|mean linear CN_2
+CrystalNNFingerprint|std_dev linear CN_2
+CrystalNNFingerprint|mean wt CN_3
+CrystalNNFingerprint|std_dev wt CN_3
+CrystalNNFingerprint|mean trigonal planar CN_3
+CrystalNNFingerprint|std_dev trigonal planar CN_3
+CrystalNNFingerprint|mean trigonal non-coplanar CN_3
+CrystalNNFingerprint|std_dev trigonal non-coplanar CN_3
+CrystalNNFingerprint|mean T-shaped CN_3
+CrystalNNFingerprint|std_dev T-shaped CN_3
+CrystalNNFingerprint|mean wt CN_4
+CrystalNNFingerprint|std_dev wt CN_4
+CrystalNNFingerprint|mean square co-planar CN_4
+CrystalNNFingerprint|std_dev square co-planar CN_4
+CrystalNNFingerprint|mean tetrahedral CN_4
+CrystalNNFingerprint|std_dev tetrahedral CN_4
+CrystalNNFingerprint|mean rectangular see-saw-like CN_4
+CrystalNNFingerprint|std_dev rectangular see-saw-like CN_4
+CrystalNNFingerprint|mean see-saw-like CN_4
+CrystalNNFingerprint|std_dev see-saw-like CN_4
+CrystalNNFingerprint|mean trigonal pyramidal CN_4
+CrystalNNFingerprint|std_dev trigonal pyramidal CN_4
+CrystalNNFingerprint|mean wt CN_5
+CrystalNNFingerprint|std_dev wt CN_5
+CrystalNNFingerprint|mean pentagonal planar CN_5
+CrystalNNFingerprint|std_dev pentagonal planar CN_5
+CrystalNNFingerprint|mean square pyramidal CN_5
+CrystalNNFingerprint|std_dev square pyramidal CN_5
+CrystalNNFingerprint|mean trigonal bipyramidal CN_5
+CrystalNNFingerprint|std_dev trigonal bipyramidal CN_5
+CrystalNNFingerprint|mean wt CN_6
+CrystalNNFingerprint|std_dev wt CN_6
+CrystalNNFingerprint|mean hexagonal planar CN_6
+CrystalNNFingerprint|std_dev hexagonal planar CN_6
+CrystalNNFingerprint|mean octahedral CN_6
+CrystalNNFingerprint|std_dev octahedral CN_6
+CrystalNNFingerprint|mean pentagonal pyramidal CN_6
+CrystalNNFingerprint|std_dev pentagonal pyramidal CN_6
+CrystalNNFingerprint|mean wt CN_7
+CrystalNNFingerprint|std_dev wt CN_7
+CrystalNNFingerprint|mean hexagonal pyramidal CN_7
+CrystalNNFingerprint|std_dev hexagonal pyramidal CN_7
+CrystalNNFingerprint|mean pentagonal bipyramidal CN_7
+CrystalNNFingerprint|std_dev pentagonal bipyramidal CN_7
+CrystalNNFingerprint|mean wt CN_8
+CrystalNNFingerprint|std_dev wt CN_8
+CrystalNNFingerprint|mean body-centered cubic CN_8
+CrystalNNFingerprint|std_dev body-centered cubic CN_8
+CrystalNNFingerprint|mean hexagonal bipyramidal CN_8
+CrystalNNFingerprint|std_dev hexagonal bipyramidal CN_8
+CrystalNNFingerprint|mean wt CN_9
+CrystalNNFingerprint|std_dev wt CN_9
+CrystalNNFingerprint|mean q2 CN_9
+CrystalNNFingerprint|std_dev q2 CN_9
+CrystalNNFingerprint|mean q4 CN_9
+CrystalNNFingerprint|std_dev q4 CN_9
+CrystalNNFingerprint|mean q6 CN_9
+CrystalNNFingerprint|std_dev q6 CN_9
+CrystalNNFingerprint|mean wt CN_10
+CrystalNNFingerprint|std_dev wt CN_10
+CrystalNNFingerprint|mean q2 CN_10
+CrystalNNFingerprint|std_dev q2 CN_10
+CrystalNNFingerprint|mean q4 CN_10
+CrystalNNFingerprint|std_dev q4 CN_10
+CrystalNNFingerprint|mean q6 CN_10
+CrystalNNFingerprint|std_dev q6 CN_10
+CrystalNNFingerprint|mean wt CN_11
+CrystalNNFingerprint|std_dev wt CN_11
+CrystalNNFingerprint|mean q2 CN_11
+CrystalNNFingerprint|std_dev q2 CN_11
+CrystalNNFingerprint|mean q4 CN_11
+CrystalNNFingerprint|std_dev q4 CN_11
+CrystalNNFingerprint|mean q6 CN_11
+CrystalNNFingerprint|std_dev q6 CN_11
+CrystalNNFingerprint|mean wt CN_12
+CrystalNNFingerprint|std_dev wt CN_12
+CrystalNNFingerprint|mean cuboctahedral CN_12
+CrystalNNFingerprint|std_dev cuboctahedral CN_12
+CrystalNNFingerprint|mean q2 CN_12
+CrystalNNFingerprint|std_dev q2 CN_12
+CrystalNNFingerprint|mean q4 CN_12
+CrystalNNFingerprint|std_dev q4 CN_12
+CrystalNNFingerprint|mean q6 CN_12
+CrystalNNFingerprint|std_dev q6 CN_12
+CrystalNNFingerprint|mean wt CN_13
+CrystalNNFingerprint|std_dev wt CN_13
+CrystalNNFingerprint|mean wt CN_14
+CrystalNNFingerprint|std_dev wt CN_14
+CrystalNNFingerprint|mean wt CN_15
+CrystalNNFingerprint|std_dev wt CN_15
+CrystalNNFingerprint|mean wt CN_16
+CrystalNNFingerprint|std_dev wt CN_16
+CrystalNNFingerprint|mean wt CN_17
+CrystalNNFingerprint|std_dev wt CN_17
+CrystalNNFingerprint|mean wt CN_18
+CrystalNNFingerprint|std_dev wt CN_18
+GaussianSymmFunc|mean G2_0.05
+GaussianSymmFunc|std_dev G2_0.05
+GaussianSymmFunc|mean G2_4.0
+GaussianSymmFunc|std_dev G2_4.0
+GaussianSymmFunc|mean G2_20.0
+GaussianSymmFunc|std_dev G2_20.0
+GaussianSymmFunc|mean G2_80.0
+GaussianSymmFunc|std_dev G2_80.0
+GaussianSymmFunc|mean G4_0.005_1.0_1.0
+GaussianSymmFunc|std_dev G4_0.005_1.0_1.0
+GaussianSymmFunc|mean G4_0.005_1.0_-1.0
+GaussianSymmFunc|std_dev G4_0.005_1.0_-1.0
+GaussianSymmFunc|mean G4_0.005_4.0_1.0
+GaussianSymmFunc|std_dev G4_0.005_4.0_1.0
+GaussianSymmFunc|mean G4_0.005_4.0_-1.0
+GaussianSymmFunc|std_dev G4_0.005_4.0_-1.0
+GeneralizedRDF|mean Gaussian center=0.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=0.0 width=1.0
+GeneralizedRDF|mean Gaussian center=1.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=1.0 width=1.0
+GeneralizedRDF|mean Gaussian center=2.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=2.0 width=1.0
+GeneralizedRDF|mean Gaussian center=3.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=3.0 width=1.0
+GeneralizedRDF|mean Gaussian center=4.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=4.0 width=1.0
+GeneralizedRDF|mean Gaussian center=5.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=5.0 width=1.0
+GeneralizedRDF|mean Gaussian center=6.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=6.0 width=1.0
+GeneralizedRDF|mean Gaussian center=7.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=7.0 width=1.0
+GeneralizedRDF|mean Gaussian center=8.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=8.0 width=1.0
+GeneralizedRDF|mean Gaussian center=9.0 width=1.0
+GeneralizedRDF|std_dev Gaussian center=9.0 width=1.0
+LocalPropertyDifference|mean local difference in Electronegativity
+LocalPropertyDifference|std_dev local difference in Electronegativity
+OPSiteFingerprint|mean sgl_bd CN_1
+OPSiteFingerprint|std_dev sgl_bd CN_1
+OPSiteFingerprint|mean L-shaped CN_2
+OPSiteFingerprint|std_dev L-shaped CN_2
+OPSiteFingerprint|mean water-like CN_2
+OPSiteFingerprint|std_dev water-like CN_2
+OPSiteFingerprint|mean bent 120 degrees CN_2
+OPSiteFingerprint|std_dev bent 120 degrees CN_2
+OPSiteFingerprint|mean bent 150 degrees CN_2
+OPSiteFingerprint|std_dev bent 150 degrees CN_2
+OPSiteFingerprint|mean linear CN_2
+OPSiteFingerprint|std_dev linear CN_2
+OPSiteFingerprint|mean trigonal planar CN_3
+OPSiteFingerprint|std_dev trigonal planar CN_3
+OPSiteFingerprint|mean trigonal non-coplanar CN_3
+OPSiteFingerprint|std_dev trigonal non-coplanar CN_3
+OPSiteFingerprint|mean T-shaped CN_3
+OPSiteFingerprint|std_dev T-shaped CN_3
+OPSiteFingerprint|mean square co-planar CN_4
+OPSiteFingerprint|std_dev square co-planar CN_4
+OPSiteFingerprint|mean tetrahedral CN_4
+OPSiteFingerprint|std_dev tetrahedral CN_4
+OPSiteFingerprint|mean rectangular see-saw-like CN_4
+OPSiteFingerprint|std_dev rectangular see-saw-like CN_4
+OPSiteFingerprint|mean see-saw-like CN_4
+OPSiteFingerprint|std_dev see-saw-like CN_4
+OPSiteFingerprint|mean trigonal pyramidal CN_4
+OPSiteFingerprint|std_dev trigonal pyramidal CN_4
+OPSiteFingerprint|mean pentagonal planar CN_5
+OPSiteFingerprint|std_dev pentagonal planar CN_5
+OPSiteFingerprint|mean square pyramidal CN_5
+OPSiteFingerprint|std_dev square pyramidal CN_5
+OPSiteFingerprint|mean trigonal bipyramidal CN_5
+OPSiteFingerprint|std_dev trigonal bipyramidal CN_5
+OPSiteFingerprint|mean hexagonal planar CN_6
+OPSiteFingerprint|std_dev hexagonal planar CN_6
+OPSiteFingerprint|mean octahedral CN_6
+OPSiteFingerprint|std_dev octahedral CN_6
+OPSiteFingerprint|mean pentagonal pyramidal CN_6
+OPSiteFingerprint|std_dev pentagonal pyramidal CN_6
+OPSiteFingerprint|mean hexagonal pyramidal CN_7
+OPSiteFingerprint|std_dev hexagonal pyramidal CN_7
+OPSiteFingerprint|mean pentagonal bipyramidal CN_7
+OPSiteFingerprint|std_dev pentagonal bipyramidal CN_7
+OPSiteFingerprint|mean body-centered cubic CN_8
+OPSiteFingerprint|std_dev body-centered cubic CN_8
+OPSiteFingerprint|mean hexagonal bipyramidal CN_8
+OPSiteFingerprint|std_dev hexagonal bipyramidal CN_8
+OPSiteFingerprint|mean q2 CN_9
+OPSiteFingerprint|std_dev q2 CN_9
+OPSiteFingerprint|mean q4 CN_9
+OPSiteFingerprint|std_dev q4 CN_9
+OPSiteFingerprint|mean q6 CN_9
+OPSiteFingerprint|std_dev q6 CN_9
+OPSiteFingerprint|mean q2 CN_10
+OPSiteFingerprint|std_dev q2 CN_10
+OPSiteFingerprint|mean q4 CN_10
+OPSiteFingerprint|std_dev q4 CN_10
+OPSiteFingerprint|mean q6 CN_10
+OPSiteFingerprint|std_dev q6 CN_10
+OPSiteFingerprint|mean q2 CN_11
+OPSiteFingerprint|std_dev q2 CN_11
+OPSiteFingerprint|mean q4 CN_11
+OPSiteFingerprint|std_dev q4 CN_11
+OPSiteFingerprint|mean q6 CN_11
+OPSiteFingerprint|std_dev q6 CN_11
+OPSiteFingerprint|mean cuboctahedral CN_12
+OPSiteFingerprint|std_dev cuboctahedral CN_12
+OPSiteFingerprint|mean q2 CN_12
+OPSiteFingerprint|std_dev q2 CN_12
+OPSiteFingerprint|mean q4 CN_12
+OPSiteFingerprint|std_dev q4 CN_12
+OPSiteFingerprint|mean q6 CN_12
+OPSiteFingerprint|std_dev q6 CN_12
+VoronoiFingerprint|mean Voro_index_3
+VoronoiFingerprint|std_dev Voro_index_3
+VoronoiFingerprint|mean Voro_index_4
+VoronoiFingerprint|std_dev Voro_index_4
+VoronoiFingerprint|mean Voro_index_5
+VoronoiFingerprint|std_dev Voro_index_5
+VoronoiFingerprint|mean Voro_index_6
+VoronoiFingerprint|std_dev Voro_index_6
+VoronoiFingerprint|mean Voro_index_7
+VoronoiFingerprint|std_dev Voro_index_7
+VoronoiFingerprint|mean Voro_index_8
+VoronoiFingerprint|std_dev Voro_index_8
+VoronoiFingerprint|mean Voro_index_9
+VoronoiFingerprint|std_dev Voro_index_9
+VoronoiFingerprint|mean Voro_index_10
+VoronoiFingerprint|std_dev Voro_index_10
+VoronoiFingerprint|mean Symmetry_index_3
+VoronoiFingerprint|std_dev Symmetry_index_3
+VoronoiFingerprint|mean Symmetry_index_4
+VoronoiFingerprint|std_dev Symmetry_index_4
+VoronoiFingerprint|mean Symmetry_index_5
+VoronoiFingerprint|std_dev Symmetry_index_5
+VoronoiFingerprint|mean Symmetry_index_6
+VoronoiFingerprint|std_dev Symmetry_index_6
+VoronoiFingerprint|mean Symmetry_index_7
+VoronoiFingerprint|std_dev Symmetry_index_7
+VoronoiFingerprint|mean Symmetry_index_8
+VoronoiFingerprint|std_dev Symmetry_index_8
+VoronoiFingerprint|mean Symmetry_index_9
+VoronoiFingerprint|std_dev Symmetry_index_9
+VoronoiFingerprint|mean Symmetry_index_10
+VoronoiFingerprint|std_dev Symmetry_index_10
+VoronoiFingerprint|mean Voro_vol_sum
+VoronoiFingerprint|std_dev Voro_vol_sum
+VoronoiFingerprint|mean Voro_area_sum
+VoronoiFingerprint|std_dev Voro_area_sum
+VoronoiFingerprint|mean Voro_vol_mean
+VoronoiFingerprint|std_dev Voro_vol_mean
+VoronoiFingerprint|mean Voro_vol_std_dev
+VoronoiFingerprint|std_dev Voro_vol_std_dev
+VoronoiFingerprint|mean Voro_vol_minimum
+VoronoiFingerprint|std_dev Voro_vol_minimum
+VoronoiFingerprint|mean Voro_vol_maximum
+VoronoiFingerprint|std_dev Voro_vol_maximum
+VoronoiFingerprint|mean Voro_area_mean
+VoronoiFingerprint|std_dev Voro_area_mean
+VoronoiFingerprint|mean Voro_area_std_dev
+VoronoiFingerprint|std_dev Voro_area_std_dev
+VoronoiFingerprint|mean Voro_area_minimum
+VoronoiFingerprint|std_dev Voro_area_minimum
+VoronoiFingerprint|mean Voro_area_maximum
+VoronoiFingerprint|std_dev Voro_area_maximum
+VoronoiFingerprint|mean Voro_dist_mean
+VoronoiFingerprint|std_dev Voro_dist_mean
+VoronoiFingerprint|mean Voro_dist_std_dev
+VoronoiFingerprint|std_dev Voro_dist_std_dev
+VoronoiFingerprint|mean Voro_dist_minimum
+VoronoiFingerprint|std_dev Voro_dist_minimum
+VoronoiFingerprint|mean Voro_dist_maximum
+VoronoiFingerprint|std_dev Voro_dist_maximum
+SineCoulombMatrix|sine coulomb matrix eig 93
+BondFractions|Pb - Pb bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 111
+CoulombMatrix|coulomb matrix eig 104
+CrystalNNFingerprint|mean wt CN_19
+BondFractions|Cl - O bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 104
+SineCoulombMatrix|sine coulomb matrix eig 89
+CoulombMatrix|coulomb matrix eig 83
+BondFractions|Bi - O bond frac.
+CoulombMatrix|coulomb matrix eig 80
+SineCoulombMatrix|sine coulomb matrix eig 108
+BondFractions|Dy - Dy bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 80
+SineCoulombMatrix|sine coulomb matrix eig 113
+SineCoulombMatrix|sine coulomb matrix eig 115
+SineCoulombMatrix|sine coulomb matrix eig 112
+CoulombMatrix|coulomb matrix eig 92
+SineCoulombMatrix|sine coulomb matrix eig 97
+SineCoulombMatrix|sine coulomb matrix eig 98
+BondFractions|N - O bond frac.
+BondFractions|Cl - Cl bond frac.
+CoulombMatrix|coulomb matrix eig 94
+CoulombMatrix|coulomb matrix eig 95
+CoulombMatrix|coulomb matrix eig 119
+BondFractions|O - Sr bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 103
+SineCoulombMatrix|sine coulomb matrix eig 88
+BondFractions|Pt - Pt bond frac.
+CoulombMatrix|coulomb matrix eig 81
+CoulombMatrix|coulomb matrix eig 100
+CoulombMatrix|coulomb matrix eig 91
+BondFractions|Ir - Ir bond frac.
+BondFractions|O - P bond frac.
+BondFractions|B - O bond frac.
+BondFractions|Tl - Tl bond frac.
+BondFractions|Tm - Tm bond frac.
+BondFractions|U - U bond frac.
+CrystalNNFingerprint|std_dev wt CN_21
+BondFractions|Yb - Yb bond frac.
+CoulombMatrix|coulomb matrix eig 107
+BondFractions|Rh - Rh bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 100
+CoulombMatrix|coulomb matrix eig 88
+CoulombMatrix|coulomb matrix eig 84
+CoulombMatrix|coulomb matrix eig 93
+CoulombMatrix|coulomb matrix eig 115
+SineCoulombMatrix|sine coulomb matrix eig 101
+BondFractions|Au - Au bond frac.
+BondFractions|I - I bond frac.
+CoulombMatrix|coulomb matrix eig 111
+CoulombMatrix|coulomb matrix eig 87
+SineCoulombMatrix|sine coulomb matrix eig 95
+CrystalNNFingerprint|std_dev wt CN_22
+CoulombMatrix|coulomb matrix eig 99
+BondFractions|O - V bond frac.
+BondFractions|Ru - Ru bond frac.
+BondFractions|Cr - O bond frac.
+BondFractions|Lu - Lu bond frac.
+BondFractions|Eu - Eu bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 117
+SineCoulombMatrix|sine coulomb matrix eig 109
+SineCoulombMatrix|sine coulomb matrix eig 99
+SineCoulombMatrix|sine coulomb matrix eig 94
+BondFractions|Pd - Pd bond frac.
+CrystalNNFingerprint|std_dev wt CN_20
+SineCoulombMatrix|sine coulomb matrix eig 106
+SineCoulombMatrix|sine coulomb matrix eig 105
+BondFractions|Nb - Nb bond frac.
+CoulombMatrix|coulomb matrix eig 110
+SineCoulombMatrix|sine coulomb matrix eig 85
+CrystalNNFingerprint|mean wt CN_20
+SineCoulombMatrix|sine coulomb matrix eig 83
+CoulombMatrix|coulomb matrix eig 105
+BondFractions|O - S bond frac.
+BondFractions|H - O bond frac.
+CoulombMatrix|coulomb matrix eig 109
+BondFractions|S - S bond frac.
+CoulombMatrix|coulomb matrix eig 112
+BondFractions|Ba - O bond frac.
+CoulombMatrix|coulomb matrix eig 114
+BondFractions|F - O bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 96
+CoulombMatrix|coulomb matrix eig 106
+BondFractions|Sm - Sm bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 82
+CoulombMatrix|coulomb matrix eig 86
+CoulombMatrix|coulomb matrix eig 101
+BondFractions|H - H bond frac.
+BondFractions|Nd - Nd bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 110
+SineCoulombMatrix|sine coulomb matrix eig 90
+BondFractions|Er - Er bond frac.
+BondFractions|Li - P bond frac.
+BondFractions|Hg - Hg bond frac.
+BondFractions|Ho - Ho bond frac.
+CrystalNNFingerprint|mean wt CN_22
+CoulombMatrix|coulomb matrix eig 116
+CoulombMatrix|coulomb matrix eig 98
+CoulombMatrix|coulomb matrix eig 97
+BondFractions|C - O bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 92
+BondFractions|Tb - Tb bond frac.
+BondFractions|Ta - Ta bond frac.
+CoulombMatrix|coulomb matrix eig 117
+CoulombMatrix|coulomb matrix eig 90
+BondFractions|Gd - Gd bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 119
+SineCoulombMatrix|sine coulomb matrix eig 91
+SineCoulombMatrix|sine coulomb matrix eig 87
+BondFractions|F - F bond frac.
+BondFractions|Se - Se bond frac.
+SineCoulombMatrix|sine coulomb matrix eig 118
+BondFractions|Te - Te bond frac.
+CoulombMatrix|coulomb matrix eig 102
+CoulombMatrix|coulomb matrix eig 103
+BondFractions|Br - Br bond frac.
+CoulombMatrix|coulomb matrix eig 113
+SineCoulombMatrix|sine coulomb matrix eig 107
+SineCoulombMatrix|sine coulomb matrix eig 116
+SineCoulombMatrix|sine coulomb matrix eig 81
+CoulombMatrix|coulomb matrix eig 118
+SineCoulombMatrix|sine coulomb matrix eig 114
+SineCoulombMatrix|sine coulomb matrix eig 86
+BondFractions|Pr - Pr bond frac.
+CoulombMatrix|coulomb matrix eig 96
+BondFractions|N - N bond frac.
+CoulombMatrix|coulomb matrix eig 82
+BondFractions|Ce - Ce bond frac.
+CrystalNNFingerprint|std_dev wt CN_19
+CoulombMatrix|coulomb matrix eig 85
+SineCoulombMatrix|sine coulomb matrix eig 102
+SineCoulombMatrix|sine coulomb matrix eig 84
+BondFractions|Nb - O bond frac.
+CoulombMatrix|coulomb matrix eig 108
+CoulombMatrix|coulomb matrix eig 89
+CrystalNNFingerprint|mean wt CN_21
+BondFractions|Sc - Sc bond frac.
+BondFractions|B - B bond frac.

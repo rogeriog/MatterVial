@@ -123,8 +123,9 @@ html_css_files = [
 ]
 
 # Logo and favicon
-html_logo = '../img/MATTERVial_logo.png'
-html_favicon = '../img/MATTERVial_logo.png'
+# The path to your logo file, relative to the docs directory
+html_logo = '_static/MATTERVial_logo_small.png'
+html_favicon = '_static/MATTERVial_logo_small.png'
 
 # Theme options
 html_theme_options = {

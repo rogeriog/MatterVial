@@ -1,6 +1,6 @@
 ﻿mattervial.interpreter
 ======================
 
-.. currentmodule:: mattervial.interpreter
+.. currentmodule:: mattervial
 
-.. automodule:: mattervial.interpreter
+.. automodule:: interpreter

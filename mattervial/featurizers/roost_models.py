@@ -230,5 +230,4 @@ def get_RoostFeatures(compositions_input, model_type=None, model_file=None, embe
    except OSError as e:
        print(f"Error removing temporary file {data_path}: {e}")
 
-
    return RoostFeaturesDF

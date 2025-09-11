@@ -386,26 +386,25 @@ class MVLFeaturizer:
         """
         try:
             from .megnet_models import get_MVL_MEGNetFeatures
-            import pandas as pd
 
             if len(self.layers) == 1:
-                # Single layer - maintain original behavior
+                # Single layer - pass layer_name parameter for efficiency
                 return get_MVL_MEGNetFeatures(structures, layer_name=self.layers[0])
             else:
-                # Multiple layers - extract and combine features
-                combined_features = []
+                # Multiple layers - use single-pass optimization
+                # Get all features in one pass (both layer32 and layer16)
+                all_features = get_MVL_MEGNetFeatures(structures)
 
+                # Filter to only the requested layers
+                requested_columns = []
                 for layer_name in self.layers:
-                    layer_features = get_MVL_MEGNetFeatures(structures, layer_name=layer_name)
+                    layer_prefix = 'MVL32' if layer_name == 'layer32' else 'MVL16'
+                    # Find columns that start with the layer prefix
+                    layer_columns = [col for col in all_features.columns if col.startswith(layer_prefix)]
+                    requested_columns.extend(layer_columns)
 
-                    # Rename columns to avoid redundant layer information
-                    # Original features already contain layer info (e.g., MVL32_Eform_MP_2019_1)
-                    # We don't need to add layer32_ prefix to MVL32_ features
-                    combined_features.append(layer_features)
-
-                # Combine all layer features
-                result = pd.concat(combined_features, axis=1)
-                return result
+                # Return only the requested layer features
+                return all_features[requested_columns]
 
         except ImportError as e:
             raise ImportError(f"MEGNet dependencies not available for MVLFeaturizer: {e}. "
@@ -758,14 +757,14 @@ class AdjacentMEGNetFeaturizer:
             if len(self.layers) == 1:
                 # Single layer - maintain original behavior
                 return get_Adjacent_MEGNetFeatures(structures, layer_name=self.layers[0],
-                                                   model_path=self.model_path, **kwargs)
+                                                   **kwargs)
             else:
                 # Multiple layers - extract and combine features
                 combined_features = []
 
                 for layer_name in self.layers:
                     layer_features = get_Adjacent_MEGNetFeatures(structures, layer_name=layer_name,
-                                                                 model_path=self.model_path, **kwargs)
+                                                                **kwargs)
 
                     # Rename columns to avoid redundant layer information
                     # Original features already contain layer info, no need for additional prefix
@@ -814,7 +813,7 @@ class ORBFeaturizer:
         >>> orb_featurizer = ORBFeaturizer(model_name="ORB_v3")
         >>> features = orb_featurizer.get_features(structures)
         >>> print(features.shape)
-        (100, 256)  # 256 ORB features
+        
     """
 
     def __init__(self, model_name="ORB_v3", device=None, precision="float32-high"):
@@ -874,6 +873,7 @@ class ORBFeaturizer:
             >>> orb_featurizer = ORBFeaturizer()
             >>> features = orb_featurizer.get_features(structures)
             >>> print(f"Extracted {features.shape[1]} ORB features")
+            Extracted 1792 ORB features
         """
         try:
             from .mlip_models import get_ORB_features

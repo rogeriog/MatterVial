@@ -110,12 +110,12 @@ def get_sisso_features(input_data, formulas_file_path=None, robust_scaler_params
         else:
             raise ValueError("input_data must be either a path to a CSV file or a pandas DataFrame")
 
-        target_column = 'target'
-        if target_column not in df.columns:
-            raise ValueError(f"Target column '{target_column}' not found in data.")
+        # target_column = 'target'
+        # if target_column not in df.columns:
+        #     raise ValueError(f"Target column '{target_column}' not found in data.")
 
         # Identify feature columns (exclude target and known nonfeature columns).
-        feature_columns = [col for col in df.columns if col not in [target_column, 'composition', 'material_id', 'structure']]
+        feature_columns = [col for col in df.columns if col not in ['target', 'composition', 'material_id', 'structure']]
         if not feature_columns:
             raise ValueError("No feature columns found in the input data.")
         print(f"Feature columns identified: {feature_columns}")

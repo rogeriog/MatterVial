@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+authors:
+  - family-names: "Gouvêa"
+    given-names: "Rogério Almeida"
+  - family-names: "De Breuck"
+    given-names: "Pierre-Paul"
+  - family-names: "Pretto"
+    given-names: "Tatiane"
+  - family-names: "Rignanese"
+    given-names: "Gian-Marco"
+  - family-names: "Santos"
+    given-names: "Marcos José Leite"
+title: "MatterVial: Materials Feature Extraction via Interpretable Artificial Learning"
+# You can add version and date-released for your software
+# version: 1.0.0
+# date-released: 2025-09-10
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Gouvêa"
+    given-names: "Rogério Almeida"
+  - family-names: "De Breuck"
+    given-names: "Pierre-Paul"
+  - family-names: "Pretto"
+    given-names: "Tatiane"
+  - family-names: "Rignanese"
+    given-names: "Gian-Marco"
+  - family-names: "Santos"
+    given-names: "Marcos José Leite"
+  title: "Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability"
+  journal: "arXiv"
+  year: 2025
+  volume: "abs/2509.03547"
+  doi: "10.48550/arXiv.2509.03547"
+  url: "https://arxiv.org/abs/2509.03547"

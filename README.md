@@ -255,6 +255,23 @@ We welcome contributions to improve the MatterVial tool, including adding more p
 
 This project is licensed under the MIT License.
 
+## Citation
+If you use MatterVial in your research, please cite our paper:
+
+Gouvêa, R. A., De Breuck, P.-P., Pretto, T., Rignanese, G.-M., & Santos, M. J. L. (2025). *Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability*. arXiv preprint arXiv:2509.03547. https://doi.org/10.48550/arXiv.2509.03547
+
+```bibtex
+@misc{gouvea2025mattervial,
+      title={Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability}, 
+      author={Rogério Almeida Gouvêa and Pierre-Paul De Breuck and Tatiane Pretto and Gian-Marco Rignanese and Marcos José Leite Santos},
+      year={2025},
+      eprint={2509.03547},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+      doi={10.48550/arXiv.2509.03547},
+      url={[https://arxiv.org/abs/2509.03547](https://arxiv.org/abs/2509.03547)}
+}
+```
 ## Acknowledgments
 
 The MatterVial tool is built on top of other software packages and publicly available GNN models such as MEGNet, ROOST, ORB-v3 and coGN. We also acknowledge the developers of the SISSO package which was used to augment MatMiner featurizers via symbolic regression and decompose the feature-space of GNN models.

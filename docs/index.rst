@@ -116,13 +116,16 @@ If you use MatterVial in your research, please cite our paper:
 
 .. code-block:: bibtex
 
-   @article{mattervial2024,
-     title={MatterVial: Materials Feature Extraction via Interpretable Artificial Learning},
-     author={Author Names},
-     journal={Journal Name},
-     year={2024},
-     doi={DOI}
-   }
+@misc{gouvea2025mattervial,
+      title={Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability}, 
+      author={Rogério Almeida Gouvêa and Pierre-Paul De Breuck and Tatiane Pretto and Gian-Marco Rignanese and Marcos José Leite Santos},
+      year={2025},
+      eprint={2509.03547},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.mtrl-sci},
+      doi={10.48550/arXiv.2509.03547},
+      url={[https://arxiv.org/abs/2509.03547](https://arxiv.org/abs/2509.03547)}
+}
 
 License
 -------

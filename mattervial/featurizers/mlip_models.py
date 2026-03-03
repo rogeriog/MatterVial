@@ -4,6 +4,7 @@ from pymatgen.core import Structure
 from pymatgen.io.ase import AseAtomsAdaptor
 import torch
 import os
+import warnings
 # ORB model imports
 try:
     import ase
@@ -11,7 +12,11 @@ try:
     ORB_AVAILABLE = True
 except ImportError:
     ORB_AVAILABLE = False
-    print("Warning: ORB models not available. Please install orb-models to use ORBFeaturizer.")
+    warnings.warn(
+        "ORB models not available. Please install orb-models to use ORBFeaturizer.",
+        ImportWarning,
+        stacklevel=2,
+    )
 
 
 class ORBModelHandler:

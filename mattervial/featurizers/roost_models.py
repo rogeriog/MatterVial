@@ -2,6 +2,7 @@ import os
 import types
 import tempfile
 import torch
+import warnings
 import pandas as pd
 import numpy as np
 from torch.utils.data import DataLoader
@@ -210,7 +211,11 @@ def get_RoostFeatures(compositions_input, model_type=None, model_file=None, embe
       features_list.append(feat)
 
    if missing_ids:
-       print(f"Warning: Could not find features for the following material_ids: {missing_ids}")
+       warnings.warn(
+           f"Could not find features for the following material_ids: {missing_ids}",
+           UserWarning,
+           stacklevel=2,
+       )
 
    # Create the final DataFrame using the correctly ordered list and the original index
    RoostFeaturesDF = pd.DataFrame(features_list, index=index_list)

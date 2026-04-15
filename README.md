@@ -9,7 +9,7 @@
 
 ## Overview
 
-MatterVial is a featurizer tool designed for materials science, leveraging both graph-neural networks (GNNs) and traditional feature engineering to extract valuable chemical information from materials structures and compositions. It aims to enhance the performance of materials property prediction models by generating meaningful features for a variety of machine learning tasks. MatterVial stands for **MAT**erials fea**T**u**R**e **E**xtraction **V**ia **I**nterpretable **A**rtificial **L**earning, evoking the metaphor of a vial containing distilled knowledge from materials data, representing our tool's ability to extract and contain valuable materials insights.
+MatterVial is a featurizer tool designed for materials science, leveraging both graph-neural networks (GNNs) and traditional feature engineering to extract valuable chemical information from materials structures and compositions. It aims to enhance the performance of materials property prediction models by generating meaningful features for a variety of machine learning tasks. MatterVial stands for **MAT**erials fea**T**ure **E**xt**R**action **V**ia **I**nterpretable **A**rtificial **L**earning, evoking the metaphor of a vial containing distilled knowledge from materials data, representing our tool's ability to extract and contain valuable materials insights.
 
 
 ## Available Featurizers

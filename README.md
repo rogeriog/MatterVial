@@ -257,19 +257,18 @@ This project is licensed under the MIT License.
 
 ## Citation
 If you use MatterVial in your research, please cite our paper:
-
-Gouvêa, R. A., De Breuck, P.-P., Pretto, T., Rignanese, G.-M., & Santos, M. J. L. (2025). *Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability*. arXiv preprint arXiv:2509.03547. https://doi.org/10.48550/arXiv.2509.03547
-
+Gouvêa, R.A., De Breuck, P.-P., Pretto, T. et al. Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability. *npj Comput Mater* **12**, 67 (2026). https://doi.org/10.1038/s41524-025-01938-2
 ```bibtex
-@misc{gouvea2025mattervial,
-      title={Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability}, 
-      author={Rogério Almeida Gouvêa and Pierre-Paul De Breuck and Tatiane Pretto and Gian-Marco Rignanese and Marcos José Leite Santos},
-      year={2025},
-      eprint={2509.03547},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.mtrl-sci},
-      doi={10.48550/arXiv.2509.03547},
-      url={[https://arxiv.org/abs/2509.03547](https://arxiv.org/abs/2509.03547)}
+@article{Gouvea2026,
+  author = {Gouv{\^e}a, Rog{\'e}rio A. and De Breuck, Pierre-Paul and Pretto, Tatiane and Rignanese, Gian-Marco and Santos, Marcos Jos{\'e} Leite},
+  title = {Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability},
+  journal = {npj Computational Materials},
+  year = {2026},
+  volume = {12},
+  number = {1},
+  pages = {67},
+  doi = {10.1038/s41524-025-01938-2},
+  url = {[https://doi.org/10.1038/s41524-025-01938-2](https://doi.org/10.1038/s41524-025-01938-2)}
 }
 ```
 ## Acknowledgments

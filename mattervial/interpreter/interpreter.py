@@ -2,6 +2,7 @@ import os
 import re
 import json
 import pprint
+import warnings
 import requests
 import tarfile
 from pathlib import Path
@@ -369,7 +370,11 @@ class Interpreter:
                         self._additional_formulas = self._load_formulas(additional_formula_file)  
                         self._additional_formulas_path = additional_formula_file # Store path to avoid reloading  
                     except FileNotFoundError as e:  
-                        print(f"Warning: Additional formula file not found: {e}. Skipping search in this file.")  
+                        warnings.warn(
+                            f"Additional formula file not found: {e}. Skipping search in this file.",
+                            UserWarning,
+                            stacklevel=2,
+                        )  
                         self._additional_formulas = None # Reset to ensure it's not used if file not found  
                   
                 if self._additional_formulas:  

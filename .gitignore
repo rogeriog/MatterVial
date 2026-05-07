@@ -83,3 +83,12 @@ cython_debug/
 
 # Dump old files
 dump/
+
+# SVGs from interpreter
+# 1. Ignore all subdirectories in this specific path
+/mattervial/interpreter/shap_plots/*/
+
+# 2. Specifically allow the README.md in that directory
+!/mattervial/interpreter/shap_plots/README.md
+
+/mattervial/interpreter/decoders/

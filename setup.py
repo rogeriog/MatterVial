@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="mattervial",  # Package name
-    version="0.1.4",  # Updated version number
+    version="0.1.5",  # Updated version number
     author="Rogério A. Gouvêa",  # Add your name or the authorship group
     author_email="rogeriog.em@gmail.com",  # Add your email
     description="A package that uses pretrained graph-neural network models and symbolic regression formulas on material descriptors as featurizers for interpretable predictions in materials science.",
@@ -50,10 +50,8 @@ setup(
         'mattervial.interpreter': [
             'formulas/*.json',
             'help_scripts/*',
-            'shap_plots/**/*',
             'shap_values/**/*',
-            'data/**/*',
-            'decoders/*'
+            'data/*.json'
         ],
     },
     entry_points={

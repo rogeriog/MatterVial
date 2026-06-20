@@ -6,6 +6,7 @@ pre-trained autoencoders.
 
 import sys
 import os
+import warnings
 import pandas as pd
 import requests
 import tarfile
@@ -22,9 +23,12 @@ try:
     from autoencoder_tools.data_processing import encode_dataset, decode_dataset
     _AUTOENCODER_TOOLS_AVAILABLE = True
 except ImportError as e:
-    print(f"Warning: Could not import 'autoencoder_tools'. Decoder functions will not work until dependencies are available.")
-    print(f"Package path: {packages_path}")
-    print(f"Error: {e}")
+    warnings.warn(
+        f"Could not import 'autoencoder_tools' (path: {packages_path}). "
+        f"Decoder functions will not work until dependencies are available. Error: {e}",
+        ImportWarning,
+        stacklevel=2,
+    )
     _AUTOENCODER_TOOLS_AVAILABLE = False
 
     # Create dummy functions for testing

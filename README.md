@@ -213,7 +213,6 @@ This is a specialized environment required **only** for using the **ORB-v3** MLI
 ```bash
 conda create -n env_orb_simplified python=3.11.13 pip uv -c conda-forge -y
 conda activate env_orb_simplified
-export UV_CACHE_DIR=/scratch/ucl/modl/rgouvea/.uv_cache
 uv pip install orb-models==0.5.4 torch==2.7.1 tensorflow==2.20.0 pymatgen==2025.6.14 matminer==0.9.3 ase==3.25.0 spglib==2.6.0 h5py pandas scikit-learn scipy tqdm pyyaml
 # In the MatterVial folder containing the setup.py
 uv pip install -e .

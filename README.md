@@ -30,14 +30,6 @@ MatterVial offers a diverse set of feature extraction tools, each designed to ca
 
 -   **ORBFeaturizer**: Extracts features using the ORB-v3 machine learning interatomic potential (MLIP). ORB models provide high-quality structural embeddings based on orbital-based representations and require a specialized conda environment.
 
-#### Legacy Featurizers (Deprecated)
-
--   **LatentMMFeaturizer (ℓ-MM)**: ⚠️ **Deprecated** - Use `DescriptorMEGNetFeaturizer(base_descriptor='l-MM_v1')` instead. This featurizer extracts latent space features from MatMiner descriptors using a pretrained MEGNet model.
-
--   **LatentOFMFeaturizer (ℓ-OFM)**: ⚠️ **Deprecated** - Use `DescriptorMEGNetFeaturizer(base_descriptor='l-OFM_v1')` instead. This featurizer extracts latent space features from Orbital Field Matrix (OFM) descriptors.
-
--   **AdjacentMEGNetFeaturizer**: ⚠️ **Deprecated** - Use `AdjacentGNNFeaturizer(base_model='MEGNet')` instead. This featurizer trains a MEGNet model on-the-fly using the user's dataset.
-
 ### Composition-Based Featurizers
 -   **RoostModelFeaturizer**: Featurizer for ROOST (Representation Learning from Stoichiometry) models, which extract features directly from material compositions without requiring structural information. Available pretrained models:
     - `roost_mpgap`: ROOST model pretrained on the Materials Project band gap dataset
@@ -66,7 +58,7 @@ To install MatterVial, clone the repository and use the following command:
 pip install -r requirements.txt
 ```
 
-Ensure you have all the necessary dependencies installed, including TensorFlow, scikit-learn, the MEGNet library and Pytorch.
+**Note:** MatterVial has specialized dependencies for different featurizers. We recommend using the provided conda environments for optimal compatibility. See the [Environment Setup](#-environment-setup) section below for detailed instructions on setting up environments for Primary (MEGNet/ROOST) and ORB featurizers.
 
 ## Usage
 
@@ -193,22 +185,21 @@ except Exception as e:
 
 ## ⚙️ Environment Setup
 
-MatterVial utilizes specialized models for certain featurizers, some of which have unique and conflicting dependencies. To manage this, we provide specific Conda environment files in the `envs/` folder. Please install the environment that corresponds to the features you intend to use.
+MatterVial utilizes specialized models for certain featurizers, some of which have unique and conflicting dependencies. To manage this, we provide specific Conda environment files in the `envs/` folder for comparison with the original paper. We recommend concatenating the features from Primary and ORB environments for the best result.
 
 ### Primary Environment
 
 This environment supports the main featurizers used in our paper, including **MEGNet-based models** (MVL featurizers, descriptor-oriented l-MM and l-OFM, and adjacent MEGNet), and **ROOST**. 
 
-**1. Create the environment:**
+**Create the environment and install MatterVial:**
 
 ```bash
-conda env create -f envs/env_primary.yml
-```
-
-**2. Activate the environment:**
-
-```bash
+conda create -n env_primary python=3.9.21 pip cudatoolkit=11.8.0 cudnn=8.9.2.26 uv -c conda-forge -y
 conda activate env_primary
+
+uv pip install tensorflow==2.13.1 torch==2.1.2 megnet==1.3.2 pymatgen==2023.9.25 matminer==0.7.4 auto-sklearn==0.15.0 xgboost==2.1.4 shap==0.47.2 ase==3.25.0 spglib==2.5.0 h5py pandas scikit-learn scipy tqdm pyyaml torch-scatter --extra-index-url https://download.pytorch.org/whl/cu118 -f https://data.pyg.org/whl/torch-2.1.2+cu118.html
+# In the MatterVial folder containing the setup.py
+uv pip install -e . 
 ```
 
 -----
@@ -217,17 +208,17 @@ conda activate env_primary
 
 This is a specialized environment required **only** for using the **ORB-v3** MLIP-based featurizer.
 
-**1. Create the environment:**
+**Create the environment and install MatterVial:**
 
 ```bash
-conda env create -f envs/env_orb.yml
+conda create -n env_orb_simplified python=3.11.13 pip uv -c conda-forge -y
+conda activate env_orb_simplified
+export UV_CACHE_DIR=/scratch/ucl/modl/rgouvea/.uv_cache
+uv pip install orb-models==0.5.4 torch==2.7.1 tensorflow==2.20.0 pymatgen==2025.6.14 matminer==0.9.3 ase==3.25.0 spglib==2.6.0 h5py pandas scikit-learn scipy tqdm pyyaml
+# In the MatterVial folder containing the setup.py
+uv pip install -e .
 ```
 
-**2. Activate the environment:**
-
-```bash
-conda activate env_orb
-```
 
 -----
 
@@ -235,15 +226,10 @@ conda activate env_orb
 
 This environment is required **only** for using featurizers based on **coGN** or **coGNN** models.
 
-**1. Create the environment:**
+**Create the environment and activate:**
 
 ```bash
 conda env create -f envs/env_kgcnn.yml
-```
-
-**2. Activate the environment:**
-
-```bash
 conda activate env_kgcnn
 ```
 

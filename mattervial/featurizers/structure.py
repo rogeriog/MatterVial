@@ -38,7 +38,7 @@ class DescriptorMEGNetFeaturizer:
         (100, 188)  # 188 ℓ-OFM features
     """
 
-    def __init__(self, base_descriptor='l-MM_v1'):
+    def __init__(self, base_descriptor='l-MM_v1', num_cores=None):
         """
         Initialize DescriptorMEGNetFeaturizer.
 
@@ -46,6 +46,8 @@ class DescriptorMEGNetFeaturizer:
             base_descriptor (str): Base descriptor type to use. Options:
                 - 'l-MM_v1' (default): Latent MatMiner features (758 features)
                 - 'l-OFM_v1': Latent Orbital Field Matrix features (188 features)
+            num_cores (int, optional): Number of CPU cores for graph conversion.
+                If None, defaults to min(8, cpu_count-1). Set to 1 to disable multiprocessing.
 
         Raises:
             ValueError: If invalid base_descriptor is provided.
@@ -56,6 +58,9 @@ class DescriptorMEGNetFeaturizer:
 
             >>> # ℓ-OFM featurizer
             >>> featurizer = DescriptorMEGNetFeaturizer(base_descriptor='l-OFM_v1')
+
+            >>> # Single-threaded to avoid OOM
+            >>> featurizer = DescriptorMEGNetFeaturizer(num_cores=1)
         """
         # Validate base_descriptor
         valid_descriptors = ['l-MM_v1', 'l-OFM_v1']
@@ -66,9 +71,9 @@ class DescriptorMEGNetFeaturizer:
 
         # Initialize the appropriate backend featurizer
         if self.base_descriptor == 'l-MM_v1':
-            self._backend_featurizer = LatentMMFeaturizer()
+            self._backend_featurizer = LatentMMFeaturizer(num_cores=num_cores)
         elif self.base_descriptor == 'l-OFM_v1':
-            self._backend_featurizer = LatentOFMFeaturizer()
+            self._backend_featurizer = LatentOFMFeaturizer(num_cores=num_cores)
 
     def get_features(self, structures):
         """
@@ -143,7 +148,7 @@ class LatentMMFeaturizer:
         >>> features = featurizer.get_features(structures)
     """
 
-    def __init__(self):
+    def __init__(self, num_cores=None):
         """Initialize LatentMMFeaturizer with deprecation warning."""
         warnings.warn(
             "LatentMMFeaturizer is deprecated and will be removed in a future version. "
@@ -151,6 +156,7 @@ class LatentMMFeaturizer:
             DeprecationWarning,
             stacklevel=2
         )
+        self.num_cores = num_cores
 
     def get_features(self, structures):
         """
@@ -180,7 +186,7 @@ class LatentMMFeaturizer:
         # Logic for latent space MatMiner feature extraction
         try:
             from .megnet_models import get_Custom_MEGNetFeatures
-            return get_Custom_MEGNetFeatures(structures, model_type='MatMinerEncoded_v1')
+            return get_Custom_MEGNetFeatures(structures, model_type='MatMinerEncoded_v1', num_cores=self.num_cores)
         except ImportError as e:
             raise ImportError(f"MEGNet dependencies not available for LatentMMFeaturizer: {e}. "
                             f"Please install required packages (keras, megnet, etc.) or use a different environment.")
@@ -239,7 +245,7 @@ class LatentOFMFeaturizer:
         >>> features = featurizer.get_features(structures)
     """
 
-    def __init__(self):
+    def __init__(self, num_cores=None):
         """Initialize LatentOFMFeaturizer with deprecation warning."""
         warnings.warn(
             "LatentOFMFeaturizer is deprecated and will be removed in a future version. "
@@ -247,6 +253,7 @@ class LatentOFMFeaturizer:
             DeprecationWarning,
             stacklevel=2
         )
+        self.num_cores = num_cores
 
     def get_features(self, structures):
         """
@@ -276,7 +283,7 @@ class LatentOFMFeaturizer:
         # Logic for latent space OFM feature extraction
         try:
             from .megnet_models import get_Custom_MEGNetFeatures
-            return get_Custom_MEGNetFeatures(structures, model_type='OFMEncoded_v1')
+            return get_Custom_MEGNetFeatures(structures, model_type='OFMEncoded_v1', num_cores=self.num_cores)
         except ImportError as e:
             raise ImportError(f"MEGNet dependencies not available for LatentOFMFeaturizer: {e}. "
                             f"Please install required packages (keras, megnet, etc.) or use a different environment.")
@@ -319,7 +326,7 @@ class MVLFeaturizer:
         (100, 240)  # 160 + 80 features combined
     """
 
-    def __init__(self, layers=['layer32', 'layer16']):
+    def __init__(self, layers=['layer32', 'layer16'], num_cores=None):
         """
         Initialize MVLFeaturizer.
 
@@ -327,6 +334,8 @@ class MVLFeaturizer:
             layers (list or str): List of layer names to extract features from,
                 or single layer name string. Options: ['layer32', 'layer16'] (default),
                 ['layer32'], ['layer16'], 'layer32', 'layer16'.
+            num_cores (int, optional): Number of CPU cores for graph conversion.
+                If None, defaults to min(8, cpu_count-1). Set to 1 to disable multiprocessing.
 
         Raises:
             ValueError: If invalid layer names are provided.
@@ -340,6 +349,9 @@ class MVLFeaturizer:
 
             >>> # Custom multi-layer
             >>> featurizer = MVLFeaturizer(layers=['layer32', 'layer16'])
+
+            >>> # Single-threaded to avoid OOM
+            >>> featurizer = MVLFeaturizer(num_cores=1)
         """
         # Handle backward compatibility - convert single string to list
         if isinstance(layers, str):
@@ -355,6 +367,7 @@ class MVLFeaturizer:
 
         # For backward compatibility, keep layer_name attribute for single layer
         self.layer_name = self.layers[0] if len(self.layers) == 1 else None
+        self.num_cores = num_cores
 
     def get_features(self, structures):
         """
@@ -389,11 +402,11 @@ class MVLFeaturizer:
 
             if len(self.layers) == 1:
                 # Single layer - pass layer_name parameter for efficiency
-                return get_MVL_MEGNetFeatures(structures, layer_name=self.layers[0])
+                return get_MVL_MEGNetFeatures(structures, layer_name=self.layers[0], num_cores=self.num_cores)
             else:
                 # Multiple layers - use single-pass optimization
                 # Get all features in one pass (both layer32 and layer16)
-                all_features = get_MVL_MEGNetFeatures(structures)
+                all_features = get_MVL_MEGNetFeatures(structures, num_cores=self.num_cores)
 
                 # Filter to only the requested layers
                 requested_columns = []
@@ -447,7 +460,7 @@ class AdjacentGNNFeaturizer:
         >>> adj_cogn = AdjacentGNNFeaturizer(base_model='coGN')
     """
 
-    def __init__(self, base_model='MEGNet', layers=['layer32', 'layer16'], **kwargs):
+    def __init__(self, base_model='MEGNet', layers=['layer32', 'layer16'], num_cores=None, **kwargs):
         """
         Initialize AdjacentGNNFeaturizer.
 
@@ -458,6 +471,8 @@ class AdjacentGNNFeaturizer:
             layers (list or str): List of layer names to extract features from,
                 or single layer name string. Options: ['layer32', 'layer16'] (default),
                 ['layer32'], ['layer16'], 'layer32', 'layer16'.
+            num_cores (int, optional): Number of CPU cores for graph conversion.
+                If None, defaults to min(8, cpu_count-1). Set to 1 to disable multiprocessing.
             **kwargs: Additional arguments including:
                 - model_path (str): Path where model files will be saved/loaded.
                   Defaults to './'.
@@ -476,6 +491,9 @@ class AdjacentGNNFeaturizer:
             ...     layers='layer32',
             ...     model_path='/path/to/models/'
             ... )
+
+            >>> # Single-threaded to avoid OOM
+            >>> featurizer = AdjacentGNNFeaturizer(num_cores=1)
 
             >>> # coGN model (placeholder)
             >>> featurizer = AdjacentGNNFeaturizer(base_model='coGN')
@@ -505,7 +523,7 @@ class AdjacentGNNFeaturizer:
 
         # Initialize the appropriate backend featurizer
         if self.base_model == 'MEGNet':
-            self._backend_featurizer = AdjacentMEGNetFeaturizer(layers=layers, **kwargs)
+            self._backend_featurizer = AdjacentMEGNetFeaturizer(layers=layers, num_cores=num_cores, **kwargs)
         elif self.base_model == 'coGN':
             # Placeholder for coGN implementation
             self._backend_featurizer = None
@@ -629,7 +647,7 @@ class AdjacentMEGNetFeaturizer:
         >>> features = adj_featurizer.get_features(structures)
     """
 
-    def __init__(self, layers=['layer32', 'layer16'], **kwargs):
+    def __init__(self, layers=['layer32', 'layer16'], num_cores=None, **kwargs):
         """
         Initialize AdjacentMEGNetFeaturizer.
 
@@ -637,6 +655,8 @@ class AdjacentMEGNetFeaturizer:
             layers (list or str): List of layer names to extract features from,
                 or single layer name string. Options: ['layer32', 'layer16'] (default),
                 ['layer32'], ['layer16'], 'layer32', 'layer16'.
+            num_cores (int, optional): Number of CPU cores for graph conversion.
+                If None, defaults to min(8, cpu_count-1). Set to 1 to disable multiprocessing.
             **kwargs: Additional arguments including:
                 - model_path (str): Path where model files will be saved/loaded.
                   Defaults to './'.
@@ -650,6 +670,9 @@ class AdjacentMEGNetFeaturizer:
 
             >>> # Recommended new usage
             >>> featurizer = AdjacentGNNFeaturizer(base_model='MEGNet')
+
+            >>> # Single-threaded to avoid OOM
+            >>> featurizer = AdjacentMEGNetFeaturizer(num_cores=1)
         """
         # Issue deprecation warning
         warnings.warn(
@@ -673,6 +696,7 @@ class AdjacentMEGNetFeaturizer:
         # For backward compatibility, keep layer_name attribute for single layer
         self.layer_name = self.layers[0] if len(self.layers) == 1 else None
         self.model_path = kwargs.get('model_path', './')
+        self.num_cores = num_cores
 
     def train_adjacent_megnet(self, structures, targets, **kwargs):
         """
@@ -757,14 +781,14 @@ class AdjacentMEGNetFeaturizer:
             if len(self.layers) == 1:
                 # Single layer - maintain original behavior
                 return get_Adjacent_MEGNetFeatures(structures, layer_name=self.layers[0],
-                                                   **kwargs)
+                                                   num_cores=self.num_cores, **kwargs)
             else:
                 # Multiple layers - extract and combine features
                 combined_features = []
 
                 for layer_name in self.layers:
                     layer_features = get_Adjacent_MEGNetFeatures(structures, layer_name=layer_name,
-                                                                **kwargs)
+                                                                num_cores=self.num_cores, **kwargs)
 
                     # Rename columns to avoid redundant layer information
                     # Original features already contain layer info, no need for additional prefix
@@ -816,7 +840,8 @@ class ORBFeaturizer:
         
     """
 
-    def __init__(self, model_name="ORB_v3", device=None, precision="float32-high"):
+    def __init__(self, model_name="ORB_v3", device=None,
+                 precision="float32-high", handle_disorder=False):
         """
         Initialize ORBFeaturizer.
 
@@ -826,6 +851,10 @@ class ORBFeaturizer:
                 automatically detects CUDA availability. Options: 'cuda', 'cpu'.
             precision (str): Model precision mode. Defaults to "float32-high".
                 Options depend on the ORB model implementation.
+            handle_disorder (bool): If True, disordered sites (partial
+                occupations) are featurized with occupancy-weighted soft
+                one-hot atom embeddings. Defaults to False (majority species
+                only, stock ORB behaviour).
 
         Examples:
             >>> # Default configuration
@@ -841,6 +870,7 @@ class ORBFeaturizer:
         self.model_name = model_name
         self.device = device
         self.precision = precision
+        self.handle_disorder = handle_disorder
 
     def get_features(self, structures):
         """
@@ -880,7 +910,8 @@ class ORBFeaturizer:
             return get_ORB_features(structures,
                                    model_name=self.model_name,
                                    device=self.device,
-                                   precision=self.precision)
+                                   precision=self.precision,
+                                   handle_disorder=self.handle_disorder)
         except ImportError as e:
             raise ImportError(f"ORB dependencies not available for ORBFeaturizer: {e}. "
                             f"Please install orb-models package or use the ORB environment.")

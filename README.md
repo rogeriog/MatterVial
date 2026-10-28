@@ -123,6 +123,58 @@ features_adj = adj_gnn.get_features(structures)
 # adj_legacy = AdjacentMEGNetFeaturizer(layers='layer32')  # Issues deprecation warning
 ```
 
+#### Disordered / Partial-Occupancy Structures (ORB_v3)
+
+Stock ORB requires ordered structures — `AseAtomsAdaptor` rejects
+disordered pymatgen structures, so they fail with `NaN` (or empty)
+features. With `handle_disorder=True`, disordered sites are featurized
+with an **occupancy-weighted soft one-hot** atom embedding instead of an
+integer embedding-table lookup:
+
+```
+h_i = sum_Z occ_Z(site i) * W[Z]
+```
+
+where `W` is the pretrained ORB atom-embedding matrix and `occ_Z` the
+fractional occupancy of element `Z` on site `i`. For fully occupied
+sites the soft one-hot is an exact one-hot row, so ordered structures
+reproduce stock ORB features exactly (endpoint regression tested to
+`atol=1e-5`). Vacancies (occupancy < 1) are handled the same way.
+
+```python
+from mattervial import ORBFeaturizer
+from mattervial.featurizers.atomic import AtomicFeaturizer
+from pymatgen.core import Structure, Lattice
+
+# A disordered structure: Na0.5K0.5Cl on the cation site
+disordered = Structure(
+    Lattice.cubic(5.64),
+    [{"Na": 0.5, "K": 0.5}, "Cl"],
+    [[0, 0, 0], [0.5, 0.5, 0.5]],
+)
+
+# Structure-level ORB features (1792 columns)
+orb = ORBFeaturizer(model_name="ORB_v3", handle_disorder=True)
+orb_features = orb.get_features([disordered])
+
+# Per-atom ORB embeddings: (n_atoms, 256) per structure
+atomic = AtomicFeaturizer(models=["ORB_v3"], orb_handle_disorder=True)
+per_atom = atomic.get_features(disordered)["ORB_v3"]
+```
+
+Notes:
+
+-   `handle_disorder=False` (default) preserves stock behaviour:
+    disordered structures fail through the ASE adaptor and return
+    `NaN`/empty features.
+-   Ordered and disordered structures can be mixed in the same input
+    list; the soft path applies only where `structure.is_ordered` is
+    `False`.
+-   Occupancy weighting is a linear embedding-space mixing of the
+    endpoint species — physically reasonable for alchemical interpolants
+    and site mixing, but it is an approximation, not a learned disorder
+    model.
+
 #### ROOST Featurizers
 Here's an example of how to use MatterVial to extract features from a list of compositions:
 
